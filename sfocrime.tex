@@ -392,7 +392,7 @@ Methods}
 
 %% ---- classic IEEETrans wide authors' list ----------------
 \IEEEauthorblockN{
-Praveen K P\IEEEauthorrefmark{1},Shilpa Gupta\IEEEauthorrefmark{2}%%
+Praveen Kuruvangi Parameshwara\IEEEauthorrefmark{1},Shilpa Gupta\IEEEauthorrefmark{2}%%
 }
 
 
@@ -519,7 +519,7 @@ crime, hence improving the safety of the communities.
 
 With this objective, in the paper we illustrate the systematic process
 of understand different factors that are helpful in predicting crimes
-based on historical data. We also explore the background work associated
+based on historical data. We also explored the background work associated
 with crime analysis and summarise the research done in the field of
 crime analysis using ML and different approaches.
 
@@ -536,9 +536,10 @@ the ML approach. Gahalot et al. (2020) reviews how artificial
 intelligence approaches have been utilized in the crime prediction
 field. This gives us insight on data collection, pre-processing,
 classification, pattern identification and finally, the comparison of
-different data mining. The authors also explore the crime data based on
-weekdays and weekends \textless????\textgreater. The paper Pandya et al.
-(2022) combines social media and offline sources to isolate crime
+different data mining. The authors also explored artificial neural network 
+methods on the crime data based on weekdays and weekends using 100 hidden layers
+and adam solver but the accuracy had dropped very low value. The paper 
+Pandya et al. (2022) combines social media and offline sources to isolate crime
 behavior. The model categorieses an individual as a suspect, normal, or
 a criminal but it is completely at the higher level and further
 investigation and other processes needs to be carried out to reduce
@@ -547,24 +548,21 @@ of data and text. The paper Yadav et al. (2017) gives a good overview of
 association mining, clustering, classification technique, correlation,
 and regression but not breakthrough in any of the methods. Menaka and
 Booba (2022) proposes approaches to identify patterns from crime records
-to aid in investigation, control and prevention.
+to aid in investigation, control and prevention.  
 
-\textbf{?Need to highlight how is this study contrasts with other
-approaches discussed above?} The scope of the papers include many things
+\textbf The paper Al-Ghushami et al. (2022) exlored quite a fiew things
 towards predicting crimes that happen at different places and categories
-of crime that have occurred at a specific place with highest accuracy.
-They best utilize and explore different ML algorithms to analyze and
-predict the crimes. It gives us a path on how to deal with huge amounts
+of crime that have occurred at a specific place with accuracy depending on
+number of classes. The paper utalized different ML techniques to analyze 
+and predict the crimes. It gives us a path on how to deal with huge amounts
 of data for analysis and model creation. Random Forest, Adaboost and
 Gradient boosting gave good accuracy for different classes. They also
 talk about KNN and how they tested by moving the K value from 100, 1000,
 6000 and so on. The value 6000 gave good accuracy. They used a Decision
 tree with depth of 5 for better accuracy. They brief about different
-types of visualization to understand the data in a much better way.
-
-\textbf{?What is the objective with this paragraph?} The paper talks
-about ANN Initially but there is not much importance or usage of ANN. It
-provides details of accuracy of different models for reduction in
+types of visualization to understand the data in a much better way. The paper 
+talked about ANN Initially but there is not much importance or usage of ANN. 
+It provides details of accuracy of different models for reduction in
 classes but no details about any class. Even though the accuracy of
 naive Bayes and KNN is lower compared to random forest, Adaboost and
 gradient boosting, they have used those for prediction and are not sure
@@ -574,6 +572,12 @@ towards two places of east San Francisco. Analysis on different cities
 will give more clarity on the performance of the models. Effective
 visualization can still be done in different ways, but it is not
 defined, and no analysis done on resolution.
+
+Eventhough many papers explored the usage of Machine learning and Artificial
+neural network methods, the efficient and robustenss of these methods are not 
+much utalized. And also, the advanced methods like TabNet, successful 
+achievement of the higher accuracy and flexibality of end-to-end usage of 
+only python libraries are not considered.
 
 In this paper, the San Francisco dataset is considered as an important
 dataset because of geographical location. It is one of the busiest
@@ -611,13 +615,10 @@ based on the area using census data.
 
 The data for the analysis was downloaded from San Francisco Police
 Department Crime incident reporting system. The data contains the
-details of the crime from 2003 to \textasciitilde present
-year\textasciitilde{} (year???). The data consists of two csv files, the
+details of the crime from 2003 to 2022. The data consists of two csv files, the
 first csv file has data from 2003 to 2018 and the second is from 2018 to
-\textsubscript{present} (year??). The data \textasciitilde contains 9 -
-10 required features\textasciitilde{} has 10 variables such as
-\textless\ldots\textgreater{} with \textasciitilde37 -
-56\textasciitilde{} incident categories. Boston crime data contains
+2022. The data 2003 to 2018 conatins 37 incident categories whereas
+2018 to 2022 contains 50 incident categories. Boston crime data contains
 historical data of the year 2022 from the police department incident
 report. The data consists of 50 incident categories.
 
@@ -627,7 +628,7 @@ The quality of data helps in providing valuable information and helps in
 building the models. Some of the methods that are followed to improve
 the quality of the data are data cleaning which involve removing the
 invalid or unnecessary rows, addressing the missing values, data
-transformation involves extraction of new features from existing
+transformation which involves extraction of new features from existing
 attributes and combining the required attributes to create the new
 features, data reduction involves discarding the null record or
 attributes that are not required or correlated and data conversion
@@ -672,7 +673,7 @@ categories in the San Francisco region.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig3} 
+{\centering \includegraphics[width=0.9\linewidth]{img/fig3} 
 
 }
 
@@ -681,7 +682,7 @@ categories in the San Francisco region.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig4} 
+{\centering \includegraphics[width=0.7\linewidth]{img/fig4} 
 
 }
 
@@ -697,7 +698,7 @@ autumn are favorable for crime cases.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig5} 
+{\centering \includegraphics[width=0.7\linewidth]{img/fig5} 
 
 }
 
@@ -706,7 +707,7 @@ autumn are favorable for crime cases.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig6} 
+{\centering \includegraphics[width=0.7\linewidth]{img/fig6} 
 
 }
 
@@ -715,7 +716,7 @@ autumn are favorable for crime cases.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig7} 
+{\centering \includegraphics[width=0.7\linewidth]{img/fig7} 
 
 }
 
@@ -731,7 +732,7 @@ in a year and the minimum crime count on Sunday is 200.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig8} 
+{\centering \includegraphics[width=0.9\linewidth]{img/fig8} 
 
 }
 
@@ -740,7 +741,7 @@ in a year and the minimum crime count on Sunday is 200.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig9} 
+{\centering \includegraphics[width=0.8\linewidth]{img/fig9} 
 
 }
 
@@ -749,7 +750,7 @@ in a year and the minimum crime count on Sunday is 200.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig10} 
+{\centering \includegraphics[width=0.7\linewidth]{img/fig10} 
 
 }
 
@@ -808,29 +809,6 @@ K-nearest neighbor, ANN, Tablet and time series analysis are created to
 understand the behavior of the data with the model.
 
 \section{Methods}\label{methods}
-
-\textbf{? This paragraph is not adding any new information, can we
-remove?} The methods that are followed to identify the required features
-and address the missing values are based on correlation, more frequent
-and null values. The feature extraction such as day, year, month, hour,
-season, time of day from the timestamp attribute are the most important
-factors to focus on the models. It is necessary to convert the character
-categorial to numeric categorical features and convert the attributes
-values to numeric. The data split requires more attention in proper
-distribution of all the classes of incident category in train,
-validation, and test dataset. The analysis of data needs aggregation
-which is one of the better methods. The creation of the model expects
-the standardization of the data. The libraries are important to support
-the project tasks. The models are fine-tuned based on the
-hyperparameters, activation function, loss function, number of hidden
-layers, neurons, optimizer, and scheduler parameters. The complete code
-is extended to apply the method to a different dataset which is the
-BOSTON crime data set. The code only needs initial data frame setup and
-the rest of code needs only changes on the number of categories of the
-crime. It is easy to apply to any crime dataset in a very short time and
-in one go for all tasks such as analysis, visualization, and modeling.
-It is better fit to all the different types of visualization, analysis
-and model creation process and methods.
 
 \textbf{? Can we expand on how we have formulated the business problem
 into an analytical problem?} This project is intended to be used for
@@ -923,24 +901,43 @@ of classification. The accuracy of the models is between 83 -- 98 \%
 achieved through different ML and AI approaches. All metrics reported at
 the .2 decision threshold.
 
-\section{Discussion and Impact}\label{discussion-and-impact}
+\begin{figure}
 
-In this study different machine learning models have been compared like
-naive bayes, Bayesian networks, Gaussian naive bayes, decision tree,
-random forest, weighted k-nearest neighbors, multi-layer perceptron
-classifier, adaboost, gradient boosting, linear discriminant analysis
-and quadratic discriminant analysis to predict the crime category
-attribute. The paper result shows the better performance of gradient
-boosting, random forest, decision tree and LDA in terms of accuracy.
-\textbf{???Some of the models perform better compared to others but the
-difference is less across the models.} The model also dragged to use 10-
-fold cross-validation while calculating the training accuracy. This
-method can be used for different datasets, and this helps the law
-enforcement agencies to take advantage of machine learning models to
-maintain law and order and curb crime. This existing paper has more
-details and limitations. Hence, as part of our main paper we tried to
-address the majority of the aspects and some challenges. The details of
-the existing IEEE paper details are as below.
+{\centering \includegraphics[width=0.7\linewidth]{img/fig12} 
+
+}
+
+\caption{Confusion metrics for Random Forest}\label{fig:unnamed-chunk-12}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{img/fig13} 
+
+}
+
+\caption{Confusion metrics for K-Nearest Neighbor.}\label{fig:unnamed-chunk-13}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{img/ANN} 
+
+}
+
+\caption{Confusion metrics for Artificial Neural Network.}\label{fig:unnamed-chunk-13b}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{img/TabNet} 
+
+}
+
+\caption{Confusion metrics for TabNet.}\label{fig:unnamed-chunk-13c}
+\end{figure}
+
+\section{Discussion and Impact}\label{discussion-and-impact}
 
 We always approach ML algorithms for classification problems, but Deep
 learning models and TabNet are also good for classification problems on
@@ -961,10 +958,10 @@ choose the model for prediction.
 
 \section{Evaluation and Reflection}\label{evaluation-and-reflection}
 
-Metrics like accuracy provide confidence in better performance of the
-model. Confusion matrix helps in visual representation of the prediction
+Metrics like accuracy provides the confidence to identify the better performance
+of the model. Confusion matrix helps in visual representation of the prediction
 and its deviation. Classification reports provide the different metrics
-like precision, recall, f1-score for different classification. This
+like precision, recall, f1-score for different classes of the categories. This
 gives better pictures on how the model is good enough for each
 classification. MSE and RMSE help in clear view of time series model
 performance. The loss function greatly influences the performance or
@@ -972,7 +969,7 @@ accuracy of the model.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/tab1} 
+{\centering \includegraphics[width=0.9\linewidth]{img/tab1} 
 
 }
 
