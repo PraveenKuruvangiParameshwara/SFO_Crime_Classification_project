@@ -454,7 +454,7 @@ specific types that happen in certain areas only. The crime pattern
 theory provides the explanation of distribution of criminal events and
 its variations. Crime generators and crime attractor concentrate in the
 places that include frequent routine movements of the population to
-create hot and cold spots of the crime. The offender is more often
+create hot and cold spots of crime. The offender is more often
 comfortable with frequently committed crimes and prefers to commit these
 in the places that they are most familiar with. These offenders can be
 distinguished based on the type of crimes that fall into specific
@@ -520,7 +520,7 @@ crime, hence improving the safety of the communities.
 With this objective, in the paper we illustrate the systematic process
 of understand different factors that are helpful in predicting crimes
 based on historical data. We also explored the background work associated
-with crime analysis and summarise the research done in the field of
+with crime analysis and summarize the research done in the field of
 crime analysis using ML and different approaches.
 
 \section{Background}\label{background}
@@ -538,9 +538,9 @@ field. This gives us insight on data collection, pre-processing,
 classification, pattern identification and finally, the comparison of
 different data mining. The authors also explored artificial neural network 
 methods on the crime data based on weekdays and weekends using 100 hidden layers
-and adam solver but the accuracy had dropped very low value. The paper 
+and adam solver but the accuracy had dropped very low. The paper 
 Pandya et al. (2022) combines social media and offline sources to isolate crime
-behavior. The model categorieses an individual as a suspect, normal, or
+behavior. The model categorizes an individual as a suspect, normal, or
 a criminal but it is completely at the higher level and further
 investigation and other processes needs to be carried out to reduce
 false positives and false negatives. This is limited to specific types
@@ -550,10 +550,10 @@ and regression but not breakthrough in any of the methods. Menaka and
 Booba (2022) proposes approaches to identify patterns from crime records
 to aid in investigation, control and prevention.  
 
-\textbf The paper Al-Ghushami et al. (2022) exlored quite a fiew things
+\textbf The paper Al-Ghushami et al. (2022) explored quite a few things
 towards predicting crimes that happen at different places and categories
 of crime that have occurred at a specific place with accuracy depending on
-number of classes. The paper utalized different ML techniques to analyze 
+number of classes. The paper utilized different ML techniques to analyze 
 and predict the crimes. It gives us a path on how to deal with huge amounts
 of data for analysis and model creation. Random Forest, Adaboost and
 Gradient boosting gave good accuracy for different classes. They also
@@ -568,15 +568,15 @@ naive Bayes and KNN is lower compared to random forest, Adaboost and
 gradient boosting, they have used those for prediction and are not sure
 about the reason behind the same. The model and other factors are
 specific to the San Francisco dataset and looks like data is skewed
-towards two places of east San Francisco. Analysis on different cities
+towards two places in east San Francisco. Analysis on different cities
 will give more clarity on the performance of the models. Effective
 visualization can still be done in different ways, but it is not
 defined, and no analysis done on resolution.
 
-Eventhough many papers explored the usage of Machine learning and Artificial
-neural network methods, the efficient and robustenss of these methods are not 
-much utalized. And also, the advanced methods like TabNet, successful 
-achievement of the higher accuracy and flexibality of end-to-end usage of 
+Even Though many papers explored the usage of Machine learning and Artificial
+neural network methods, the efficient and robustness of these methods are not 
+much utilized. And also, the advanced methods like TabNet, successful 
+achievement of the higher accuracy and flexibility of end-to-end usage of 
 only python libraries are not considered.
 
 In this paper, the San Francisco dataset is considered as an important
@@ -594,7 +594,7 @@ methods for detecting crimes in the San Francisco region. These models
 and methods not only perform better but also facilitate better
 hyperparameter tuning techniques.
 
-\section{Methodology**}\label{methodology}
+\section{Methodology}\label{methodology}
 
 The goal of the project is to analyze and visualize the spatial and
 temporal relationship of crimes on various attributes and predict the
@@ -611,13 +611,13 @@ more meaning to the model and its architecture. Explore the possibility
 to relate the data skewness to the population or poverty, or others
 based on the area using census data.
 
-\subsection{Data Acquisition**}\label{data-acquisition}
+\subsection{Data Acquisition}\label{data-acquisition}
 
 The data for the analysis was downloaded from San Francisco Police
 Department Crime incident reporting system. The data contains the
 details of the crime from 2003 to 2022. The data consists of two csv files, the
 first csv file has data from 2003 to 2018 and the second is from 2018 to
-2022. The data 2003 to 2018 conatins 37 incident categories whereas
+2022. The data 2003 to 2018 contains 37 incident categories whereas
 2018 to 2022 contains 50 incident categories. Boston crime data contains
 historical data of the year 2022 from the police department incident
 report. The data consists of 50 incident categories.
@@ -769,7 +769,7 @@ in a year and the minimum crime count on Sunday is 200.
 Figure 10 shows the scatter plot of Top crimes across the San Francisco
 region. The seasons like summer and fall are attracting more crimes. The
 analysis clearly shows that the number of crimes had decreased during
-2020, it might be because of Pandemic. The crimes are mostly occurring
+2020, it might be because of the Pandemic. The crimes are mostly occurring
 during afternoon hours, and few are happening during evening hours. If
 we analyze the yearly trends, the occurrence of the crimes has changed
 from fall to winter after the pandemic. The attributes timeofday, hour,
@@ -810,8 +810,7 @@ understand the behavior of the data with the model.
 
 \section{Methods}\label{methods}
 
-\textbf{? Can we expand on how we have formulated the business problem
-into an analytical problem?} This project is intended to be used for
+\textbf This project is intended to be used for
 crime applications, such as assistance for the crime victims, police
 department, Victim service division, crime map and public safety
 awareness, Crime rates and statistics, Attorney, and legal advocacy. It
@@ -826,14 +825,14 @@ The k-nearest neighbors (KNN) algorithm is a type of supervised machine
 learning algorithm used to solve classification. The algorithm estimates
 the likelihood that a data point will become a member of one group or
 another based on what group the data points nearest to it belong to. It
-is a non-parametric algorithm since it is roboust to underlying
+is a non-parametric algorithm since it is robust to underlying
 distributions of the data.
 
 Artificial neural networks are human brain cells inspired systems which
 are intended to replicate the way that humans learn. Neural networks
 consist of input and output layers, as well as (in most cases) a hidden
 layer consisting of units that transform the input into something that
-the output layer can use. ANNs have three layers that are interconnected
+the output layer can be   used. ANNs have three layers that are interconnected
 and consist of neurons. The first layer sends data to the second layer,
 which in turn sends the next output to the third layer. ANNs are
 considered non-linear statistical data modeling tools where the complex
@@ -867,30 +866,25 @@ are
 The learning rate is initially set to, lr = 0.020
 
 After 20 epochs, a decay rate of 0.95 will be applied The result is
-simply the product of our learning rate and decay rate 0.02*0.95 In the
-next block of code, we fit the model to our data. Basically it says the
+simply the product of our learning rate and decay rate 0.02*0.95 then we fit the model to our data. Basically it says the
 train and validation sets will be evaluated for a total of 30 iterations
-(epochs). The patience parameter states that if an improvement in
-metrics is not observed after 30 consecutive epochs, the model will stop
-running and the best weights from the best epoch will be loaded. The
+(epochs). The patience parameter shows the improvement in
+metrics is not observed after 30 consecutive epochs help to get the best weights. The
 batch size of 10000 was selected based on recommendations from TabNet's
 paper, where they suggest a batch size of up to 10\% of the total data.
-They also recommend that the virtual batch size is smaller than the
-batch size and can be evenly divided into the batch size.
+
 
 Since the crime pattern also has a strong time based component we also
-explored time-series forecasting methods. These methods utilizes
-historical and current data to predict future values over a period of
-time or a specific point in the future. By analyzing data that we stored
-in the past, we can make informed decisions that can guide our business
-strategy and help us understand future trends. Using time series models
+explored time-series forecasting methods. These methods consider the
+history along with current data to forecast values through its trends over a period of
+time or a specific point in the future. Using time series models
 it is good to forecast the number of crimes that occur in the future.
 This can be drilled down further up to different category predictions.
 
 \section{Metrics}\label{metrics}
 
 Evaluation metrics include confusion metrics that contain the values of
-True positive, True Negative, False Positive and False Negative that
+True positive, , False Positive, True Negative and False Negative that
 helps in False Positive rate and False Negative rate to measure
 disproportionate model performance errors. The fraction of negative (not
 falling to the same category) and positive (same category) predictions
@@ -965,16 +959,25 @@ like precision, recall, f1-score for different classes of the categories. This
 gives better pictures on how the model is good enough for each
 classification. MSE and RMSE help in clear view of time series model
 performance. The loss function greatly influences the performance or
-accuracy of the model.
+accuracy of the model. Table 1 represent the accuracy of each model for different dataset
+and classes respresent the number of crime categories of the given data.
 
-\begin{figure}
-
-{\centering \includegraphics[width=0.9\linewidth]{img/tab1} 
-
-}
-
-\caption{Comparison of different Machine and Deep learning models}\label{fig:unnamed-chunk-12}
-\end{figure}
+\begin{table}[ht]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Model & SFO(2003-2018) & SFO(2018- 2022) & Boston(2022)\\ \hline
+Random Forest & 83.70 \% & 89.27 \% & 78.69 \% \\ \hline
+K Neighbour   & 98.79 \% & 98.59 \% & 72.70 \% \\ \hline
+ANN           & 86.07 \% & 81.63 \% & 55.58 \% \\ \hline
+TabNet        & 89.25 \% & 86.29 \% & 63.53 \% \\ \hline
+Time Series   & 37.33 \% & 42.56 \% & 26.89 \% \\ \hline
+Classes & 37 & 50 & 120 \\ \hline
+\end{tabular}
+\vspace{10pt}
+\caption{Comparison of Machine and Deep learning models}
+\label{tab:example_table}
+\end{table}
 
 \section{Application}\label{application}
 
@@ -998,7 +1001,7 @@ the webapp in the link ``http://127.0.0.1:8000'' .
 \subsection{Interactive Dashboard}\label{interactive-dashboard}
 
 The interactive dashboard needs different python libraries for map and
-interactive display and methods. The folium library to display the map
+interactive display and methods. The folium library is used for the map display
 and ipywidgets library for interactive display are installed for python.
 The next step is to identify the important features for the dashboard
 and followed by initialization of the widgets for the features that are
@@ -1040,7 +1043,7 @@ and deep learning models. It also includes the different methods like
 TabNet and includes effective interactive dashboard creation and webapp
 applications. The method is applied to different datasets to explain the
 flexibility of the approach used. The random forest comparison was done
-using both gini and entropy criteria, wighted K-nearest neighbor using
+using both gini and entropy criteria, weighted K-nearest neighbor using
 100 estimators. A deep tabular data learning called TabNet that uses
 sequential attention mechanisms and a more effective fine-tuning
 approach is used. Each model is compared across the confusion matrix and
@@ -1070,6 +1073,12 @@ Routledge.
 Darshan, MS, and Shankaraiah Shankaraiah. 2022. {``Crime Analysis and
 Prediction Using Machine Learning Algorithms.''} In \emph{2022 IEEE 2nd
 Mysore Sub Section International Conference (MysuruCon)}, 1--7. IEEE.
+
+
+\bibitem[\citeproctext]{ref-ghushami2022crime}
+A. H. Al-Ghushami, D. Syed, J. Sessa and A. Zainab. 2022. 
+{``CIntelligent Automation of Crime Prediction using Data Mining.''} 
+In \emph{2022 IEEE 31st International Symposium on Industrial Electronics (ISIE), Anchorage, AK, USA}
 
 \bibitem[\citeproctext]{ref-gahalot2020crime}
 Gahalot, Akanksha, Suraina Dhiman, Lokesh Chouhan, et al. 2020. {``Crime
@@ -1119,7 +1128,12 @@ Nikhilesh Yadav. 2017. {``Crime Pattern Detection, Analysis \&
 Prediction.''} In \emph{2017 International Conference of Electronics,
 Communication and Aerospace Technology (ICECA)}, 1:225--30. IEEE.
 
+\bibitem[\citeproctext]{ref-arik2021crime}
+Arik, Sercan O¨ , and Tomas Pfister. 2021. {``Tabnet: Attentive
+Interpretable Tabular Learning.''} In \emph{2017 Proceedings of the
+AAAI Conference on Artificial Intelligence, 35:6679–87.}
+8..
+
 \end{CSLReferences}
 
 \end{document}
-
