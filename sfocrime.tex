@@ -403,28 +403,6 @@ Methods}
 % affiliations
 
 \author{
-
-%% ---- classic IEEETrans wide authors' list ----------------
-\IEEEauthorblockN{
-Praveen Kuruvangi Parameshwara\IEEEauthorrefmark{1},Shilpa
-Gupta\IEEEauthorrefmark{2}%%
-}
-
-
-%% ----------------------------------------------------------
-
-%% ---- classic IEEETrans one column per institution --------
- %%
-%% ----------------------------------------------------------
-
-
-
-
-
-%% ---- one column per author, classic/default IEEETrans ----
-
-%% ----------------------------------------------------------
-
 }
 
 % conference papers do not typically use \thanks and this command
@@ -520,18 +498,15 @@ Pattern Theory
 
 Crime is characterized as an ``act of felony or grave offense against
 society or someone else's property which is prohibited by law. As noted
-in Mohammad A. {[}7{]} Tayebi et al. (2015) crime does not happen evenly
-across all places and that specific types of crime tend to occur more
-often in certain areas that are called crime hotspots (Sherman, Gartin,
-and Buerger 1989). Hence, the spatial analysis (Mohammad A. {[}9{]}
-Tayebi, Frank, and Glässer 2012) of different types of crimes along with
-the areas of occurrence helps in accurately predicting the different
-types of crime expected to occur in future. Brantingham and Brantingham
-(2010) has been shown to improve prediction of the time and the day of
-crime. Accurate forecasting of crime hotspots helps in effective
-management of law enforcement, see Rossmo (1999) and Weisburd, Groff,
-and Yang (2012) in mitigating the crime, hence improving the safety of
-the communities.
+in {[}1{]} crime does not happen evenly across all places and that
+specific types of crime tend to occur more often in certain areas that
+are called crime hotspots {[}2{]}. Hence, the spatial analysis {[}3{]}
+of different types of crimes along with the areas of occurrence helps in
+accurately predicting the different types of crime expected to occur in
+future. {[}4{]} has been shown to improve prediction of the time and the
+day of crime. Accurate forecasting of crime hotspots helps in effective
+management of law enforcement, see {[}5{]} and {[}6{]} in mitigating the
+crime, hence improving the safety of the communities.
 
 With this objective, in the paper we illustrate the systematic process
 of understand different factors that are helpful in predicting crimes
@@ -544,50 +519,49 @@ crime analysis using ML and different approaches.
 There are quite a few papers that are published to analyze crime and
 have used machine learning approaches to predict the crime categories.
 These papers have explored the different patterns, attributes and
-categories of crimes that are associated with data. Darshan and
-Shankaraiah (2022) gives an overview of the machine learning
-classification algorithms for the crime classification, but deals with
-only a few categories of crime and limited parameters associated with
-the ML approach. Gahalot et al. (2020) reviews how artificial
-intelligence approaches have been utilized in the crime prediction
-field. This gives us insight on data collection, pre-processing,
-classification, pattern identification and finally, the comparison of
-different data mining. The authors also explored artificial neural
-network methods on the crime data based on weekdays and weekends using
-100 hidden layers and adam solver but the accuracy had dropped very low.
-The paper Pandya et al. (2022) combines social media and offline sources
-to isolate crime behavior. The model categorizes an individual as a
-suspect, normal, or a criminal but it is completely at the higher level
-and further investigation and other processes needs to be carried out to
-reduce false positives and false negatives. This is limited to specific
-types of data and text. The paper Yadav et al. (2017) gives a good
-overview of association mining, clustering, classification technique,
-correlation, and regression but not breakthrough in any of the methods.
-Menaka and Booba (2022) proposes approaches to identify patterns from
+categories of crimes that are associated with data. {[}7{]} gives an
+overview of the machine learning classification algorithms for the crime
+classification, but deals with only a few categories of crime and
+limited parameters associated with the ML approach. {[}8{]} reviews how
+artificial intelligence approaches have been utilized in the crime
+prediction field. This gives us insight on data collection,
+pre-processing, classification, pattern identification and finally, the
+comparison of different data mining. The authors also explored
+artificial neural network methods on the crime data based on weekdays
+and weekends using 100 hidden layers and adam solver but the accuracy
+had dropped very low. The paper {[}9{]} combines social media and
+offline sources to isolate crime behavior. The model categorizes an
+individual as a suspect, normal, or a criminal but it is completely at
+the higher level and further investigation and other processes needs to
+be carried out to reduce false positives and false negatives. This is
+limited to specific types of data and text. The paper {[}10{]} gives a
+good overview of association mining, clustering, classification
+technique, correlation, and regression but not breakthrough in any of
+the methods. {[}11{]} proposes approaches to identify patterns from
 crime records to aid in investigation, control and prevention.
 
-The paper Al-Ghushami et al. (2022) explored quite a few things towards
-predicting crimes that happen at different places and categories of
-crime that have occurred at a specific place with accuracy depending on
-number of classes. The paper utilized different ML techniques to analyze
-and predict the crimes. It gives us a path on how to deal with huge
-amounts of data for analysis and model creation. Random Forest, Adaboost
-and Gradient boosting gave good accuracy for different classes. They
-also talk about KNN and how they tested by moving the K value from 100,
-1000, 6000 and so on. The value 6000 gave good accuracy. They used a
-Decision tree with depth of 5 for better accuracy. They brief about
-different types of visualization to understand the data in a much better
-way. The paper talked about ANN Initially but there is not much
-importance or usage of ANN. It provides details of accuracy of different
-models for reduction in classes but no details about any class. Even
-though the accuracy of naive Bayes and KNN is lower compared to random
-forest, Adaboost and gradient boosting, they have used those for
-prediction and are not sure about the reason behind the same. The model
-and other factors are specific to the San Francisco dataset and looks
-like data is skewed towards two places in east San Francisco. Analysis
-on different cities will give more clarity on the performance of the
-models. Effective visualization can still be done in different ways, but
-it is not defined, and no analysis done on resolution.
+The paper {[}12{]} explored quite a few things towards predicting crimes
+that happen at different places and categories of crime that have
+occurred at a specific place with accuracy depending on number of
+classes. The paper utilized different ML techniques to analyze and
+predict the crimes. It gives us a path on how to deal with huge amounts
+of data for analysis and model creation. Random Forest, Adaboost and
+Gradient boosting gave good accuracy for different classes. They also
+talk about KNN and how they tested by moving the K value from 100, 1000,
+6000 and so on. The value 6000 gave good accuracy. They used a Decision
+tree with depth of 5 for better accuracy. They brief about different
+types of visualization to understand the data in a much better way. The
+paper talked about ANN Initially but there is not much importance or
+usage of ANN. It provides details of accuracy of different models for
+reduction in classes but no details about any class. Even though the
+accuracy of naive Bayes and KNN is lower compared to random forest,
+Adaboost and gradient boosting, they have used those for prediction and
+are not sure about the reason behind the same. The model and other
+factors are specific to the San Francisco dataset and looks like data is
+skewed towards two places in east San Francisco. Analysis on different
+cities will give more clarity on the performance of the models.
+Effective visualization can still be done in different ways, but it is
+not defined, and no analysis done on resolution.
 
 Even Though many papers explored the usage of Machine learning and
 Artificial neural network methods, the efficient and robustness of these
@@ -673,7 +647,7 @@ categories in the San Francisco region.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig1} 
+{\centering \includegraphics[width=0.85\linewidth]{img/fig1} 
 
 }
 
@@ -682,7 +656,7 @@ categories in the San Francisco region.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig2} 
+{\centering \includegraphics[width=0.7\linewidth]{img/fig2} 
 
 }
 
@@ -691,7 +665,7 @@ categories in the San Francisco region.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.9\linewidth]{img/fig3} 
+{\centering \includegraphics[width=0.7\linewidth]{img/fig3} 
 
 }
 
@@ -857,17 +831,17 @@ ANNs are considered non-linear statistical data modeling tools where the
 complex relationships between inputs and outputs are modeled or patterns
 are found.
 
-TabNet, Arik and Pfister (2021), is a deep tabular data learning
-architecture and one of the first transformer based models that uses
-sequential attention to choose which features to reason from at each
-decision step. The TabNet encoder is composed of a feature transformer,
-an attentive transformer and feature masking. A split block divides the
-processed representation to be used by the attentive transformer of the
-subsequent step as well as for the overall output. For each step, the
-feature selection mask provides interpretable information about the
-model's functionality, and the masks can be aggregated to obtain global
-feature important attribution. The TabNet decoder is composed of a
-feature transformer block at each step.
+TabNet, {[}13{]}, is a deep tabular data learning architecture and one
+of the first transformer based models that uses sequential attention to
+choose which features to reason from at each decision step. The TabNet
+encoder is composed of a feature transformer, an attentive transformer
+and feature masking. A split block divides the processed representation
+to be used by the attentive transformer of the subsequent step as well
+as for the overall output. For each step, the feature selection mask
+provides interpretable information about the model's functionality, and
+the masks can be aggregated to obtain global feature important
+attribution. The TabNet decoder is composed of a feature transformer
+block at each step.
 
 In the feature transformer block, a 4-layer network is used, where 2 are
 shared across all decision steps and 2 are decision step-dependent. Each
@@ -1007,8 +981,8 @@ Classes & 37 & 50 & 120\\
 \end{tabular}
 \end{table}
 
-\section{VII. Application and
-Dashboard}\label{vii.-application-and-dashboard}
+\section{VIII. Application and
+Dashboard}\label{viii.-application-and-dashboard}
 
 \subsection{A. Web Application}\label{a.-web-application}
 
@@ -1022,7 +996,7 @@ the webapp in the link ``http://127.0.0.1:8000'' .
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig14a} 
+{\centering \includegraphics[width=0.75\linewidth]{img/fig14a} 
 
 }
 
@@ -1046,14 +1020,14 @@ dashboard.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig14b} 
+{\centering \includegraphics[width=0.75\linewidth]{img/fig14b} 
 
 }
 
 \caption{Interactive map to facilitate different requirements}\label{fig:unnamed-chunk-18}
 \end{figure}
 
-\section{VIII. Limitation}\label{viii.-limitation}
+\section{IX. Limitation}\label{ix.-limitation}
 
 This project is to predict the incident categories. The number of
 categories may vary based on the data. It is not suitable for
@@ -1062,8 +1036,8 @@ categorized based on evidence produced and justified report. It is
 difficult to get the census data based on city and geographical
 location.
 
-\section{IX. Conclusion and Future
-Work}\label{ix.-conclusion-and-future-work}
+\section{X. Conclusion and Future
+Work}\label{x.-conclusion-and-future-work}
 
 We always tend to move towards ML algorithms for classification problems
 as it is white box, but there are other models like deep learning, time
@@ -1094,78 +1068,92 @@ cause by considering population, social status and education.
 \addcontentsline{toc}{section}{References}
 
 \phantomsection\label{refs}
-\begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-al2022intelligent}
-Al-Ghushami, Abdullah Hussein {[}1{]}, Dabeeruddin Syed, Jadran Sessa,
-and Ameema Zainab. 2022. {``Intelligent Automation of Crime Prediction
-Using Data Mining.''} In \emph{2022 IEEE 31st International Symposium on
-Industrial Electronics (ISIE)}, 245--52. IEEE.
-
-\bibitem[\citeproctext]{ref-arik2021tabnet}
-Arik, Sercan Ö, and Tomas Pfister. 2021. {``Tabnet: Attentive
-Interpretable Tabular Learning.''} In \emph{Proceedings of the AAAI
-Conference on Artificial Intelligence}, 35:6679--87. 8.
-
-\bibitem[\citeproctext]{ref-brantingham2010nodes}
-Brantingham, PL {[}10{]}, and PJ Brantingham. 2010. {``Nodes, Paths, and
-Edges: Considerations on the Complexity of Crime and the Physical
-Environment (1993).''} In \emph{Classics in Environmental Criminology},
-289--326. Routledge.
-
-\bibitem[\citeproctext]{ref-darshan2022crime}
-Darshan, MS {[}2{]}, and Shankaraiah Shankaraiah. 2022. {``Crime
-Analysis and Prediction Using Machine Learning Algorithms.''} In
-\emph{2022 IEEE 2nd Mysore Sub Section International Conference
-(MysuruCon)}, 1--7. IEEE.
-
-\bibitem[\citeproctext]{ref-gahalot2020crime}
-Gahalot, Akanksha {[}3{]}, Suraina Dhiman, Lokesh Chouhan, et al. 2020.
-{``Crime Prediction and Analysis.''} In \emph{2nd International
-Conference on Data, Engineering and Applications (IDEA)}, 1--6. IEEE.
-
-\bibitem[\citeproctext]{ref-menaka2022analysis}
-Menaka, M {[}4{]}, and B Booba. 2022. {``Analysis to Improve Classifier
-Accuracy in Crime Data Prediction.''} In \emph{2022 6th International
-Conference on Computing Methodologies and Communication (ICCMC)},
-721--25. IEEE.
-
-\bibitem[\citeproctext]{ref-pandya2022analysis}
-Pandya, Darshanaben Dipakkumar {[}5{]}, Geetanjali Amarawat,
-Abhijeetsinh Jadeja, Sheshang Degadwala, and Dhairya Vyas. 2022.
-{``Analysis and Prediction of Location Based Criminal Behaviors Through
-Machine Learning.''} In \emph{2022 International Conference on Edge
-Computing and Applications (ICECAA)}, 1324--32. IEEE.
-
-\bibitem[\citeproctext]{ref-rossmo1999geographic}
-Rossmo, D Kim {[}11{]}. 1999. \emph{Geographic Profiling}. CRC press.
+\begin{CSLReferences}{0}{0}
+\bibitem[\citeproctext]{ref-tayebi2015learning}
+\CSLLeftMargin{{[}1{]} }%
+\CSLRightInline{M. A. Tayebi, U. Gla, P. L. Brantingham, \emph{et al.},
+{``Learning where to inspect: Location learning for crime prediction,''}
+in \emph{2015 IEEE international conference on intelligence and security
+informatics (ISI)}, IEEE, 2015, pp. 25--30.}
 
 \bibitem[\citeproctext]{ref-sherman1989hot}
-Sherman, Lawrence W {[}8{]}, Patrick R Gartin, and Michael E Buerger.
-1989. {``Hot Spots of Predatory Crime: Routine Activities and the
-Criminology of Place.''} \emph{Criminology} 27 (1): 27--56.
-
-\bibitem[\citeproctext]{ref-tayebi2015learning}
-Tayebi, Mohammad A {[}7{]}, Uwe Gla, Patricia L Brantingham, et al.
-2015. {``Learning Where to Inspect: Location Learning for Crime
-Prediction.''} In \emph{2015 IEEE International Conference on
-Intelligence and Security Informatics (ISI)}, 25--30. IEEE.
+\CSLLeftMargin{{[}2{]} }%
+\CSLRightInline{L. W. Sherman, P. R. Gartin, and M. E. Buerger, {``Hot
+spots of predatory crime: Routine activities and the criminology of
+place,''} \emph{Criminology}, vol. 27, no. 1, pp. 27--56, 1989.}
 
 \bibitem[\citeproctext]{ref-tayebi2012understanding}
-Tayebi, Mohammad A {[}9{]}, Richard Frank, and Uwe Glässer. 2012.
-{``Understanding the Link Between Social and Spatial Distance in the
-Crime World.''} In \emph{Proceedings of the 20th International
-Conference on Advances in Geographic Information Systems}, 550--53.
+\CSLLeftMargin{{[}3{]} }%
+\CSLRightInline{M. A. Tayebi, R. Frank, and U. Glässer, {``Understanding
+the link between social and spatial distance in the crime world,''} in
+\emph{Proceedings of the 20th international conference on advances in
+geographic information systems}, 2012, pp. 550--553.}
+
+\bibitem[\citeproctext]{ref-brantingham2010nodes}
+\CSLLeftMargin{{[}4{]} }%
+\CSLRightInline{P. Brantingham and P. Brantingham, {``Nodes, paths, and
+edges: Considerations on the complexity of crime and the physical
+environment (1993),''} in \emph{Classics in environmental criminology},
+Routledge, 2010, pp. 289--326.}
+
+\bibitem[\citeproctext]{ref-rossmo1999geographic}
+\CSLLeftMargin{{[}5{]} }%
+\CSLRightInline{D. K. Rossmo, \emph{Geographic profiling}. CRC press,
+1999.}
 
 \bibitem[\citeproctext]{ref-weisburd2012criminology}
-Weisburd, David {[}12{]}, Elizabeth R Groff, and Sue-Ming Yang. 2012.
-\emph{The Criminology of Place: Street Segments and Our Understanding of
-the Crime Problem}. Oxford University Press.
+\CSLLeftMargin{{[}6{]} }%
+\CSLRightInline{D. Weisburd, E. R. Groff, and S.-M. Yang, \emph{The
+criminology of place: Street segments and our understanding of the crime
+problem}. Oxford University Press, 2012.}
+
+\bibitem[\citeproctext]{ref-darshan2022crime}
+\CSLLeftMargin{{[}7{]} }%
+\CSLRightInline{M. Darshan and S. Shankaraiah, {``Crime analysis and
+prediction using machine learning algorithms,''} in \emph{2022 IEEE 2nd
+mysore sub section international conference (MysuruCon)}, IEEE, 2022,
+pp. 1--7.}
+
+\bibitem[\citeproctext]{ref-gahalot2020crime}
+\CSLLeftMargin{{[}8{]} }%
+\CSLRightInline{A. Gahalot, S. Dhiman, L. Chouhan, \emph{et al.},
+{``Crime prediction and analysis,''} in \emph{2nd international
+conference on data, engineering and applications (IDEA)}, IEEE, 2020,
+pp. 1--6.}
+
+\bibitem[\citeproctext]{ref-pandya2022analysis}
+\CSLLeftMargin{{[}9{]} }%
+\CSLRightInline{D. D. Pandya, G. Amarawat, A. Jadeja, S. Degadwala, and
+D. Vyas, {``Analysis and prediction of location based criminal behaviors
+through machine learning,''} in \emph{2022 international conference on
+edge computing and applications (ICECAA)}, IEEE, 2022, pp. 1324--1332.}
 
 \bibitem[\citeproctext]{ref-yadav2017crime}
-Yadav, Sunil {[}6{]}, Meet Timbadia, Ajit Yadav, Rohit Vishwakarma, and
-Nikhilesh Yadav. 2017. {``Crime Pattern Detection, Analysis \&
-Prediction.''} In \emph{2017 International Conference of Electronics,
-Communication and Aerospace Technology (ICECA)}, 1:225--30. IEEE.
+\CSLLeftMargin{{[}10{]} }%
+\CSLRightInline{S. Yadav, M. Timbadia, A. Yadav, R. Vishwakarma, and N.
+Yadav, {``Crime pattern detection, analysis \& prediction,''} in
+\emph{2017 international conference of electronics, communication and
+aerospace technology (ICECA)}, IEEE, 2017, pp. 225--230.}
+
+\bibitem[\citeproctext]{ref-menaka2022analysis}
+\CSLLeftMargin{{[}11{]} }%
+\CSLRightInline{M. Menaka and B. Booba, {``Analysis to improve
+classifier accuracy in crime data prediction,''} in \emph{2022 6th
+international conference on computing methodologies and communication
+(ICCMC)}, IEEE, 2022, pp. 721--725.}
+
+\bibitem[\citeproctext]{ref-al2022intelligent}
+\CSLLeftMargin{{[}12{]} }%
+\CSLRightInline{A. H. Al-Ghushami, D. Syed, J. Sessa, and A. Zainab,
+{``Intelligent automation of crime prediction using data mining,''} in
+\emph{2022 IEEE 31st international symposium on industrial electronics
+(ISIE)}, IEEE, 2022, pp. 245--252.}
+
+\bibitem[\citeproctext]{ref-arik2021tabnet}
+\CSLLeftMargin{{[}13{]} }%
+\CSLRightInline{S. Ö. Arik and T. Pfister, {``Tabnet: Attentive
+interpretable tabular learning,''} in \emph{Proceedings of the AAAI
+conference on artificial intelligence}, 2021, pp. 6679--6687.}
 
 \end{CSLReferences}
 
