@@ -50,7 +50,7 @@
 % The testflow support page is at:
 % http://www.michaelshell.org/tex/testflow/
 
-\documentclass[conference,final,]{IEEEtran}
+\documentclass[11 pt,conference,final,]{IEEEtran}
 % Some Computer Society conferences also require the compsoc mode option,
 % but others use the standard conference format.
 %
@@ -312,15 +312,15 @@
 %% BEGIN MY ADDITIONS %%
 
 
-\usepackage[unicode=true]{hyperref}
+%\usepackage[unicode=true]{hyperref}
+\usepackage{nohyperref}
 
-\hypersetup{
-            pdftitle={Intelligent Automation of SFO Crime Prediction using Multiple AI Methods},
-            pdfkeywords={Artificial Intelligence, Machine Learning, Deep
-Learning, TabNet, Crime Pattern Theory},
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
+%\hypersetup{
+%            pdftitle={Intelligent Automation of SFO Crime Prediction using Multiple Artifical Intelligence Methods},
+%            pdfkeywords={Artificial Intelligence, Machine Learning, Deep Learning, TabNet, Crime Pattern Theory},
+%            pdfborder={0 0 0},
+%            breaklinks=true}
+%\urlstyle{same}  % don't use monospace font for urls
 
 % Pandoc toggle for numbering sections (defaults to be off)
 \setcounter{secnumdepth}{0}
@@ -387,6 +387,10 @@ Learning, TabNet, Crime Pattern Theory},
 
 \hyphenation{op-tical net-works semi-conduc-tor}
 
+\usepackage[margin=0.75in, right=0.63in, top=0.75in, bottom=1.05in]{geometry}
+\setlength{\columnsep}{0.30in}  % Set gutter width to 0.24 inches
+
+
 \begin{document}
 %
 % paper title
@@ -395,14 +399,36 @@ Learning, TabNet, Crime Pattern Theory},
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Intelligent Automation of SFO Crime Prediction using Multiple AI
-Methods}
+\title{Intelligent Automation of SFO Crime Prediction using Multiple
+Artifical Intelligence Methods}
 
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
 
 \author{
+
+%% ---- classic IEEETrans wide authors' list ----------------
+\IEEEauthorblockN{
+Praveen Kuruvangi Parameshwara\IEEEauthorrefmark{1},Shilpa
+Gupta\IEEEauthorrefmark{2}%%
+}
+
+
+%% ----------------------------------------------------------
+
+%% ---- classic IEEETrans one column per institution --------
+ %%
+%% ----------------------------------------------------------
+
+
+
+
+
+%% ---- one column per author, classic/default IEEETrans ----
+
+%% ----------------------------------------------------------
+
 }
 
 % conference papers do not typically use \thanks and this command
@@ -891,7 +917,7 @@ the .2 decision threshold.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/fig12} 
+{\centering \includegraphics[width=0.8\linewidth]{img/fig12} 
 
 }
 
@@ -900,7 +926,7 @@ the .2 decision threshold.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/fig13} 
+{\centering \includegraphics[width=0.8\linewidth]{img/fig13} 
 
 }
 
@@ -909,7 +935,7 @@ the .2 decision threshold.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/ANN} 
+{\centering \includegraphics[width=0.8\linewidth]{img/ANN} 
 
 }
 
@@ -918,7 +944,7 @@ the .2 decision threshold.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/TabNet} 
+{\centering \includegraphics[width=0.8\linewidth]{img/TabNet} 
 
 }
 
@@ -964,9 +990,9 @@ respresent the number of crime categories of the given data.
 \centering
 \begin{tabular}[t]{l|l|l|l}
 \hline
-Model & SFO(2003-2018) & SFO(2018- 2022) & Boston(2022)\\
+Model & SFO(2003-18) & SFO(2018-22) & Boston(2022)\\
 \hline
-Random Forest & 83.70 \% & 89.27 \% & 78.69 \%\\
+RandomForest & 83.70 \% & 89.27 \% & 78.69 \%\\
 \hline
 K Neighbor & 98.79 \% & 98.59 \% & 72.70 \%\\
 \hline
@@ -996,7 +1022,7 @@ the webapp in the link ``http://127.0.0.1:8000'' .
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.75\linewidth]{img/fig14a} 
+{\centering \includegraphics[width=0.65\linewidth]{img/fig14a} 
 
 }
 
@@ -1020,7 +1046,7 @@ dashboard.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.75\linewidth]{img/fig14b} 
+{\centering \includegraphics[width=0.65\linewidth]{img/fig14b} 
 
 }
 

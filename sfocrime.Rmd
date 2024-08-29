@@ -1,22 +1,22 @@
 ---
-title: Intelligent Automation of SFO Crime Prediction using Multiple AI Methods
+title: Intelligent Automation of SFO Crime Prediction using Multiple Artifical Intelligence Methods
 blinded: 1
-#affiliation:
-#  wide: true # uncomment this line to use
-#  author:   
-#   - name: Praveen Kuruvangi Parameshwara
-#     mark: 1
-#     institution:
-#      name: San Jose State University
-#      department: Applied Data Science
-#      location: San Jose, California
-#   - name: Shilpa Gupta
-#     mark: 2
-#     email: shilpa.gupta@sjsu.edu
-#     institution:
-#      name: San Jose State University
-#      department: Industrial and Systems Engineering
-#      location: San Jose, California 94052
+affiliation:
+  wide: true # uncomment this line to use
+  author:   
+   - name: Praveen Kuruvangi Parameshwara
+     mark: 1
+     institution:
+      name: San Jose State University
+      department: Applied Data Science
+      location: San Jose, California
+   - name: Shilpa Gupta
+     mark: 2
+     email: shilpa.gupta@sjsu.edu
+     institution:
+      name: San Jose State University
+      department: Industrial and Systems Engineering
+      location: San Jose, California 94052
 
       
 keywords: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "TabNet", "Crime Pattern Theory"]
@@ -202,11 +202,11 @@ clm2 <- c("89.27 %", "98.59 %", "81.63 %", "86.29 %", "42.56 %", 50)
 
 clm3 <- c("78.69 %", "72.70 %", "55.58 %", "63.53 %", "26.89 %", 120)
 
-indnm <- c("Random Forest", "K Neighbor", "ANN", "TabNet", "TimeSeries", "Classes")
+indnm <- c("RandomForest", "K Neighbor", "ANN", "TabNet", "TimeSeries", "Classes")
 
 combdf <- cbind(indnm, clm1, clm2, clm3)
 
-colnames(combdf) <- c("Model", "SFO(2003-2018)", "SFO(2018- 2022)", "Boston(2022)")
+colnames(combdf) <- c("Model", "SFO(2003-18)", "SFO(2018-22)", "Boston(2022)")
 
 combdf %>%
   kbl(caption = "Comparision of machine and deep learing models") %>%
@@ -219,7 +219,7 @@ combdf %>%
 
 To create the web application (henceforth referred as webapp) start with YAML code as the first line of the jupyter notebook by providing the required filters as part of the code. Define the dashboard name as part of the WebAPP page. The webapp needs the mercury libraries hence install the libraries for python and use the command such as jupyter trust, mercury add, and mercury watch on the created file. This will initiate the webapp in the link “http://127.0.0.1:8000” .
 
-```{r,  out.width="75%", fig.cap="Webapp to identify the location and incidents",fig.align = "center", echo= FALSE}
+```{r,  out.width="65%", fig.cap="Webapp to identify the location and incidents",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig14a.png")
 ```
 
@@ -229,7 +229,7 @@ The interactive dashboard needs different python libraries for map and interacti
 followed by initialization of the widgets for the features that are part of filter conditions.
 The description and layout specify the display of the filter in specific format. The function should be defined to get the data and transform the data if necessary to required aggregation. Use folium method to display map and any other graph or chart if necessary. Use widget interactive method to invoke the function and required widget that are part of filters to display the interactive dashboard.
 
-```{r,  out.width="75%", fig.cap="Interactive map to facilitate different requirements",fig.align = "center", echo= FALSE}
+```{r,  out.width="65%", fig.cap="Interactive map to facilitate different requirements",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig14b.png")
 ```
 
@@ -243,6 +243,7 @@ This project is to predict the incident categories. The number of categories may
 
 We always tend to move towards ML algorithms for classification problems as it is white box, but there are other models like deep learning, time series and TabNet which can better fit and are easy to implement. Even Though ML algorithms overcome the Deep learning and TabNet models, more data and fine tuning of any models perform better for the given data. This paper presents the performance and comparison of Machine learning and deep learning models. It also includes the different methods like TabNet and includes effective interactive dashboard creation and webapp applications. The method is applied to different datasets to explain the flexibility of the approach used. The random forest comparison was done using both gini and entropy criteria, wighted K-nearest neighbor using 100 estimators. A deep tabular data learning called TabNet that uses sequential attention mechanisms and a more effective fine-tuning approach is used. Each model is compared across the confusion matrix and classification report. This project deals with all the methods using python to make the users more friendly and reduce infrastructure cost. It is easy to use the same method to any crime dataset with little modification to the given data to fit to the required format and attributes. Webapp and interactive map gives friendly and better visualization of the data. 
 The crimes are concentrated towards the particular place, and it might be tagged to population or poverty. Direction of the feature work is to get the census data based on city and geographical location to link the crime to specific location and its cause by considering population, social status and education.
+
 
 # References {#references .numbered}
 
