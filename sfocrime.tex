@@ -312,15 +312,7 @@
 %% BEGIN MY ADDITIONS %%
 
 
-%\usepackage[unicode=true]{hyperref}
 \usepackage{nohyperref}
-
-%\hypersetup{
-%            pdftitle={Intelligent Automation of SFO Crime Prediction using Multiple Artifical Intelligence Methods},
-%            pdfkeywords={Artificial Intelligence, Machine Learning, Deep Learning, TabNet, Crime Pattern Theory},
-%            pdfborder={0 0 0},
-%            breaklinks=true}
-%\urlstyle{same}  % don't use monospace font for urls
 
 % Pandoc toggle for numbering sections (defaults to be off)
 \setcounter{secnumdepth}{0}
@@ -387,10 +379,6 @@
 
 \hyphenation{op-tical net-works semi-conduc-tor}
 
-\usepackage[margin=0.75in, right=0.63in, top=0.75in, bottom=1.05in]{geometry}
-\setlength{\columnsep}{0.30in}  % Set gutter width to 0.24 inches
-
-
 \begin{document}
 %
 % paper title
@@ -409,10 +397,6 @@ Artifical Intelligence Methods}
 \author{
 
 %% ---- classic IEEETrans wide authors' list ----------------
-\IEEEauthorblockN{
-Praveen Kuruvangi Parameshwara\IEEEauthorrefmark{1},Shilpa
-Gupta\IEEEauthorrefmark{2}%%
-}
 
 
 %% ----------------------------------------------------------
@@ -491,7 +475,11 @@ web applications are supported to visualize the hidden patterns and in
 depth details the different features. The flexibility of the paper is
 extended to support any type of crime dataset with a minor initial data
 streamline process and complete end to end flow is built using only a
-python program to reduce the infrastructure cost.
+python program to reduce the infrastructure cost. The benefit from this
+paper is for the police stations to plan for more staffing to avoid the
+occurance of crimes and push towards prevention steps. It helps the
+policy maker to visualize and provide more knowledge on the crime
+occurance and prediction.
 \end{abstract}
 
 % keywords
@@ -544,7 +532,16 @@ crime analysis using ML and different approaches.
 
 There are quite a few papers that are published to analyze crime and
 have used machine learning approaches to predict the crime categories.
-These papers have explored the different patterns, attributes and
+The analysis were carried out on different dataset using different
+approaches but same method for different datasets were not considered.
+There are different tools and languages are used to support, visualize
+and build different algorithms. Many of the papers are focusing on
+machine learning approach because of dataset is falling into
+categorization methods.
+
+\section{III. Related Works}\label{ii.-related-works}
+
+The papers that are explored the different patterns, attributes and
 categories of crimes that are associated with data. {[}7{]} gives an
 overview of the machine learning classification algorithms for the crime
 classification, but deals with only a few categories of crime and
@@ -610,7 +607,7 @@ methods for detecting crimes in the San Francisco region. These models
 and methods not only perform better but also facilitate better
 hyperparameter tuning techniques.
 
-\section{III. Methodology}\label{iii.-methodology}
+\section{IV. Methodology}\label{iv.-methodology}
 
 The goal of the project is to analyze and visualize the spatial and
 temporal relationship of crimes on various attributes and predict the
@@ -662,18 +659,18 @@ formatting before performing exploratory data analysis. The attributes
 time of day, hour, latitude, longitude, and police distinct are highly
 correlated attributes. The attributes such as day of the week, time of
 the day and seasons of the year are important factors for the crimes.
-Figure 1 shows the incident count on different days. It is observed that
+Fig. 1 shows the incident count on different days. It is observed that
 most of the crimes happen on Friday and most frequently occurring crimes
 are theft, burglary, robbery, missing person, and drugs. There are quick
-resolutions for cases like robbery, burglary, and assault. Figure 2
-shows the geographical view of the crimes in the San Francisco region.
-More crimes are committed in the north-east part of San Francisco.
-Figure 3 and Figure 4 represent the high density of the Top crime
-categories in the San Francisco region.
+resolutions for cases like robbery, burglary, and assault. Fig. 2 shows
+the geographical view of the crimes in the San Francisco region. More
+crimes are committed in the north-east part of San Francisco. Fig. 3 and
+Fig. 4 represent the high density of the Top crime categories in the San
+Francisco region.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.85\linewidth]{img/fig1} 
+{\centering \includegraphics[width=0.95\linewidth]{img/fig1} 
 
 }
 
@@ -682,7 +679,7 @@ categories in the San Francisco region.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/fig2} 
+{\centering \includegraphics[width=0.9\linewidth]{img/fig2} 
 
 }
 
@@ -691,7 +688,7 @@ categories in the San Francisco region.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/fig3} 
+{\centering \includegraphics[width=0.9\linewidth]{img/fig3} 
 
 }
 
@@ -700,23 +697,23 @@ categories in the San Francisco region.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/fig4} 
+{\centering \includegraphics[width=0.95\linewidth]{img/fig4} 
 
 }
 
 \caption{Top incident categories}\label{fig:unnamed-chunk-4}
 \end{figure}
 
-Figure 5 shows the heat map of incidents based on the weekdays and
-brighter represents the hotspots of the categories. Figure 6 shows the
+Fig. 5 shows the heat map of incidents based on the weekdays and
+brighter represents the hotspots of the categories. Fig 6 shows the
 heatmap of incidents based on the time of the day. Most of the crimes
-are happening in the afternoon and evening hours. Figure 7 represents
-the heat map representation based on the season. It shows spring and
-autumn are favorable for crime cases.
+are happening in the afternoon and evening hours. Fig 7 represents the
+heat map representation based on the season. It shows spring and autumn
+are favorable for crime cases.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/fig5} 
+{\centering \includegraphics[width=0.9\linewidth]{img/fig5} 
 
 }
 
@@ -725,7 +722,7 @@ autumn are favorable for crime cases.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/fig6} 
+{\centering \includegraphics[width=0.9\linewidth]{img/fig6} 
 
 }
 
@@ -734,19 +731,19 @@ autumn are favorable for crime cases.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/fig7} 
+{\centering \includegraphics[width=0.9\linewidth]{img/fig7} 
 
 }
 
 \caption{Incidents heat map based on the time of day}\label{fig:unnamed-chunk-7}
 \end{figure}
 
-Figure 8 shows the attribute analysis based on the correlation between
+Fig. 8 shows the attribute analysis based on the correlation between
 them. The scale from 0 to 1 indicates the correlation and higher the
-value closer to the relation of the attributes. Figure 9 shows the
-number of crimes on specific days of the week. It shows crime
-occurrences every Sunday. The count has reached 300 on specific Sunday
-in a year and the minimum crime count on Sunday is 200.
+value closer to the relation of the attributes. Fig. 9 shows the number
+of crimes on specific days of the week. It shows crime occurrences every
+Sunday. The count has reached 300 on specific Sunday in a year and the
+minimum crime count on Sunday is 200.
 
 \begin{figure}
 
@@ -759,7 +756,7 @@ in a year and the minimum crime count on Sunday is 200.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{img/fig9} 
+{\centering \includegraphics[width=0.85\linewidth]{img/fig9} 
 
 }
 
@@ -768,7 +765,7 @@ in a year and the minimum crime count on Sunday is 200.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.7\linewidth]{img/fig10} 
+{\centering \includegraphics[width=0.8\linewidth]{img/fig10} 
 
 }
 
@@ -777,14 +774,14 @@ in a year and the minimum crime count on Sunday is 200.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{img/fig11} 
+{\centering \includegraphics[width=0.8\linewidth]{img/fig11} 
 
 }
 
 \caption{Crime count based on the year}\label{fig:unnamed-chunk-11}
 \end{figure}
 
-Figure 10 shows the scatter plot of Top crimes across the San Francisco
+Fig. 10 shows the scatter plot of Top crimes across the San Francisco
 region. The seasons like summer and fall are attracting more crimes. The
 analysis clearly shows that the number of crimes had decreased during
 2020, it might be because of Pandemic. The crimes are mostly occurring
@@ -826,25 +823,76 @@ The analysis drives the use of different models like Random Forest,
 K-nearest neighbor, ANN, Tablet and time series analysis are created to
 understand the behavior of the data with the model.
 
-\section{IV. Methods}\label{iv.-methods}
+\section{V. Experimental Evaluation}\label{iv.-experimental-evaluation}
 
-This project is intended to be used for crime applications, such as
-assistance for the crime victims, police department, Victim service
+Evaluation of different models are driven through the confusion metrics
+that contain the values of True positive, False Positive, True Negative
+and False Negative that helps in False Positive rate and False Negative
+rate to measure disproportionate model performance errors. The fraction
+of negative (not falling to the same category) and positive (same
+category) predictions that are incorrectly predicted to be positive and
+negative, respectively, are also reported. These metrics provide values
+for different errors that can be calculated and provide better
+understanding of classification. The accuracy of the models is between
+83 -- 98 \% achieved through different ML and AI approaches. All metrics
+reported at the .2 decision threshold.
+
+\subsection{A. Experimental Setup}\label{a.-experimental-setup}
+
+Python libraries such as seaborn, matplotlib and geopandas are used for
+visualization. The libraries such as pytorch, sklearn and tensorflow are
+widly used as part of the models. In design of webapps and interactive
+dashboard folium, ipywidgets and mercury are much useful.
+
+\subsection{B. Experimental Procedure}\label{b.-experimental-procedure}
+
+The experiment is carried out by considering different Artificial
+Intelligence methods to fulfill the crime categorization techniques.
+This paper is intended to be used for crime applications such as
+assistance for the crime prediction, police department, Victim service
 division, crime map and public safety awareness, Crime rates and
 statistics, Attorney, and legal advocacy. It is particularly intended
-for public safety awareness.
+for public safety awareness and staff requirements.
 
-Random Forest: Random Forest is an ensemble supervised machine learning
-algorithm for classification and regression problems. It involves
-building multiple decision trees on different samples and aggregating
-the predictions using a majority vote for classification.
+\subsubsection{(1). Random Forest}\label{random-forest}
+
+Random Forest is an ensemble supervised machine learning algorithm for
+classification and regression problems. It involves building multiple
+decision trees on different samples and aggregating the predictions
+using a majority vote for classification. Fig. 12 shows the confusion
+matrix for Random Forest.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{img/fig12} 
+
+}
+
+\caption{Confusion metrics for Random Forest}\label{fig:unnamed-chunk-12}
+\end{figure}
+
+\subsubsection{(2). K-nearest neighbors
+(KNN)}\label{k-nearest-neighbors-knn}
 
 The k-nearest neighbors (KNN) algorithm is a type of supervised machine
 learning algorithm used to solve classification. The algorithm estimates
 the likelihood that a data point will become a member of one group or
 another based on what group the data points nearest to it belong to. It
 is a non-parametric algorithm since it is robust to underlying
-distributions of the data.
+distributions of the data. Fig. 13 shows the confusion matrix for
+k-nearest neighbors.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{img/fig13} 
+
+}
+
+\caption{Confusion metrics for K-Nearest Neighbor}\label{fig:unnamed-chunk-13}
+\end{figure}
+
+\subsubsection{(3). Artificial neural
+networks}\label{artificial-neural-networks}
 
 Artificial neural networks are human brain cells inspired systems which
 are intended to replicate the way that humans learn. Neural networks
@@ -855,7 +903,19 @@ interconnected and consist of neurons. The first layer sends data to the
 second layer, which in turn sends the next output to the third layer.
 ANNs are considered non-linear statistical data modeling tools where the
 complex relationships between inputs and outputs are modeled or patterns
-are found.
+are found. Fig. 14 shows the confusion matrix for Artificial neural
+networks.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{img/ANN} 
+
+}
+
+\caption{Confusion metrics for Artificial Neural Network}\label{fig:unnamed-chunk-14}
+\end{figure}
+
+\subsubsection{(4). TabNet}\label{tabnet}
 
 TabNet, {[}13{]}, is a deep tabular data learning architecture and one
 of the first transformer based models that uses sequential attention to
@@ -899,59 +959,44 @@ history along with current data to forecast values through its trends
 over a period of time or a specific point in the future. Using time
 series models it is good to forecast the number of crimes that occur in
 the future. This can be drilled down further up to different category
-predictions.
-
-\section{V. Metrics}\label{v.-metrics}
-
-Evaluation metrics include confusion metrics that contain the values of
-True positive, False Positive, True Negative and False Negative that
-helps in False Positive rate and False Negative rate to measure
-disproportionate model performance errors. The fraction of negative (not
-falling to the same category) and positive (same category) predictions
-that are incorrectly predicted to be positive and negative,
-respectively, are also reported. These metrics provide values for
-different errors that can be calculated and provide better understanding
-of classification. The accuracy of the models is between 83 -- 98 \%
-achieved through different ML and AI approaches. All metrics reported at
-the .2 decision threshold.
+predictions. Fig. 15 shows the confusion matrix for Tabnet.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{img/fig12} 
-
-}
-
-\caption{Confusion metrics for Random Forest}\label{fig:unnamed-chunk-12}
-\end{figure}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{img/fig13} 
-
-}
-
-\caption{Confusion metrics for K-Nearest Neighbor}\label{fig:unnamed-chunk-13}
-\end{figure}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{img/ANN} 
-
-}
-
-\caption{Confusion metrics for Artificial Neural Network}\label{fig:unnamed-chunk-14}
-\end{figure}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{img/TabNet} 
+{\centering \includegraphics[width=0.9\linewidth]{img/TabNet} 
 
 }
 
 \caption{Confusion metrics for TabNet}\label{fig:unnamed-chunk-15}
 \end{figure}
 
-\section{VI. Discussion and Impact}\label{vi.-discussion-and-impact}
+\subsubsection{(5). Time Series Analysis}\label{time-series-analysis}
+
+Time-series forecasting is a method that consider the historical and
+current data to predict future values over a period of time. The past
+data is analyzed to make informed decisions this guides our business
+strategy and help us understand future trends. Table I represents the
+Root Mean Square Error percentage for the time series model. Lower the
+error percentage better the performance of the model.
+
+\begin{table}
+\centering
+\caption{\label{tab:unnamed-chunk-16}RMSE of the time series model}
+\centering
+\begin{tabular}[t]{l|l|l|l}
+\hline
+Model & SFO(2003-18) & SFO(2018-22) & Boston(2022)\\
+\hline
+TimeSeries & 37.33 \% & 42.56 \% & 26.89 \%\\
+\hline
+\end{tabular}
+\end{table}
+
+\section{VI. Results and Discussion}\label{vi.-results-and-discussion}
+
+-- Next, the authors should list the results of each experiment in their
+own section and provide a discussion of those results in that specific
+section
 
 We always approach ML algorithms for classification problems, but Deep
 learning models and TabNet are also good for classification problems on
@@ -980,13 +1025,14 @@ reports provide the different metrics like precision, recall, f1-score
 for different classes of the categories. This gives better pictures on
 how the model is good enough for each classification. MSE and RMSE help
 in clear view of time series model performance. The loss function
-greatly influences the performance or accuracy of the model. Table 1
-represent the accuracy of each model for different dataset and classes
-respresent the number of crime categories of the given data.
+greatly influences the performance or accuracy of the model. Table II
+represents the accuracy of each model for different dataset and classes
+respresent the number of crime categories of the given data. Higer the
+accuracy percentage better the performance of the model.
 
 \begin{table}
 \centering
-\caption{\label{tab:unnamed-chunk-16}Comparision of machine and deep learing models}
+\caption{\label{tab:unnamed-chunk-17}Comparision of machine and deep learing models}
 \centering
 \begin{tabular}[t]{l|l|l|l}
 \hline
@@ -999,8 +1045,6 @@ K Neighbor & 98.79 \% & 98.59 \% & 72.70 \%\\
 ANN & 86.07 \% & 81.63 \% & 55.58 \%\\
 \hline
 TabNet & 89.25 \% & 86.29 \% & 63.53 \%\\
-\hline
-TimeSeries & 37.33 \% & 42.56 \% & 26.89 \%\\
 \hline
 Classes & 37 & 50 & 120\\
 \hline
@@ -1022,11 +1066,11 @@ the webapp in the link ``http://127.0.0.1:8000'' .
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.65\linewidth]{img/fig14a} 
+{\centering \includegraphics[width=0.95\linewidth]{img/fig14a} 
 
 }
 
-\caption{Webapp to identify the location and incidents}\label{fig:unnamed-chunk-17}
+\caption{Webapp to identify the location and incidents}\label{fig:unnamed-chunk-18}
 \end{figure}
 
 \subsection{B. Interactive Dashboard}\label{b.-interactive-dashboard}
@@ -1046,11 +1090,11 @@ dashboard.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.65\linewidth]{img/fig14b} 
+{\centering \includegraphics[width=0.95\linewidth]{img/fig14b} 
 
 }
 
-\caption{Interactive map to facilitate different requirements}\label{fig:unnamed-chunk-18}
+\caption{Interactive map to facilitate different requirements}\label{fig:unnamed-chunk-19}
 \end{figure}
 
 \section{IX. Limitation}\label{ix.-limitation}

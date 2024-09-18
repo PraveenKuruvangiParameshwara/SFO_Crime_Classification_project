@@ -21,7 +21,7 @@ affiliation:
       
 keywords: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "TabNet", "Crime Pattern Theory"]
 abstract: |
-  Crime needs a broad understanding of its patterns and reasons behind specific types that happen in certain areas only. The crime pattern theory provides the explanation of distribution of criminal events and its variations. Crime generators and crime attractor concentrate in the places that include frequent routine movements of the population to create hot and cold spots of crime. The offender is more often comfortable with frequently committed crimes and prefers to commit these in the places that they are most familiar with. These offenders can be distinguished based on the type of crimes that fall into specific incident categories. Identifying these categories help to categorize not only frequently occurring crime locations but also facilitate the police department to consider the type of support or action that needs to be planned. Special analysis of crimes and its categories are essential to understand the frequency, time and its patterns. This paper showcases the use of different Artificial Intelligence techniques and compares their behavior and outcomes which includes different machine learning and deep learning techniques like random forest, K-nearest neighbor, Artificial Neural Network, TabNet and Time Series. These are different flavors of Artificial intelligence and also interactive dashboards and web applications are supported to visualize the hidden patterns and in depth details the different features. The flexibility of the paper is extended to support any type of crime dataset with a minor initial data streamline process and complete end to end flow is built using only a python program to reduce the infrastructure cost.
+  Crime needs a broad understanding of its patterns and reasons behind specific types that happen in certain areas only. The crime pattern theory provides the explanation of distribution of criminal events and its variations. Crime generators and crime attractor concentrate in the places that include frequent routine movements of the population to create hot and cold spots of crime. The offender is more often comfortable with frequently committed crimes and prefers to commit these in the places that they are most familiar with. These offenders can be distinguished based on the type of crimes that fall into specific incident categories. Identifying these categories help to categorize not only frequently occurring crime locations but also facilitate the police department to consider the type of support or action that needs to be planned. Special analysis of crimes and its categories are essential to understand the frequency, time and its patterns. This paper showcases the use of different Artificial Intelligence techniques and compares their behavior and outcomes which includes different machine learning and deep learning techniques like random forest, K-nearest neighbor, Artificial Neural Network, TabNet and Time Series. These are different flavors of Artificial intelligence and also interactive dashboards and web applications are supported to visualize the hidden patterns and in depth details the different features. The flexibility of the paper is extended to support any type of crime dataset with a minor initial data streamline process and complete end to end flow is built using only a python program to reduce the infrastructure cost. The benefit from this paper is for the police stations to plan for more staffing to avoid the occurance of crimes and push towards prevention steps. It helps the policy maker to visualize and provide more knowledge on the crime occurance and prediction.
 
 
 # use some specific Tex packages if needed. 
@@ -47,10 +47,11 @@ With this objective, in the paper we illustrate the systematic process of unders
 
 # II. Background
 
-There are quite a few papers that are published to analyze crime and have used machine learning approaches to predict the crime categories. These papers have explored the different patterns, attributes and categories of crimes that are associated with data. @darshan2022crime gives an overview of the machine learning classification algorithms for the crime classification, but deals with only a few categories of crime and limited parameters associated with the ML approach. @gahalot2020crime reviews how artificial intelligence approaches have been utilized in the crime prediction field. This gives us insight on data collection, pre-processing, classification, pattern identification and finally, the comparison of different data mining. The authors also explored artificial neural network 
-methods on the crime data based on weekdays and weekends using 100 hidden layers and adam solver but the accuracy had dropped very low. The paper @pandya2022analysis combines social media and offline sources to isolate crime behavior. The model categorizes an individual as a suspect, normal, or a criminal but it is completely at the higher level and further investigation and other processes needs to be carried out to reduce
-false positives and false negatives. This is limited to specific types
-of data and text. The paper @yadav2017crime gives a good overview of association mining, clustering, classification technique, correlation, and regression but not breakthrough in any of the methods. @menaka2022analysis proposes approaches to identify patterns from crime records to aid in investigation, control and prevention. 
+There are quite a few papers that are published to analyze crime and have used machine learning approaches to predict the crime categories.  The analysis were carried out on different dataset using different approaches but same method for different datasets were not considered. There are different tools and languages are used to support, visualize and build different algorithms. Many of the papers are focusing on machine learning approach because of dataset is falling into categorization methods.
+
+# II. Related Works
+
+The papers that are explored the different patterns, attributes and categories of crimes that are associated with data. @darshan2022crime gives an overview of the machine learning classification algorithms for the crime classification, but deals with only a few categories of crime and limited parameters associated with the ML approach. @gahalot2020crime reviews how artificial intelligence approaches have been utilized in the crime prediction field. This gives us insight on data collection, pre-processing, classification, pattern identification and finally, the comparison of different data mining. The authors also explored artificial neural network methods on the crime data based on weekdays and weekends using 100 hidden layers and adam solver but the accuracy had dropped very low. The paper @pandya2022analysis combines social media and offline sources to isolate crime behavior. The model categorizes an individual as a suspect, normal, or a criminal but it is completely at the higher level and further investigation and other processes needs to be carried out to reduce false positives and false negatives. This is limited to specific types of data and text. The paper @yadav2017crime gives a good overview of association mining, clustering, classification technique, correlation, and regression but not breakthrough in any of the methods. @menaka2022analysis proposes approaches to identify patterns from crime records to aid in investigation, control and prevention. 
 
 
 The paper @al2022intelligent explored quite a few things towards predicting crimes that happen at different places and categories of crime that have occurred at a specific place with accuracy depending on number of classes. The paper utilized different ML techniques to analyze and predict the crimes. It gives us a path on how to deal with huge amounts of data for analysis and model creation. Random Forest, Adaboost and Gradient boosting gave good accuracy for different classes. They also talk about KNN and how they tested by moving the K value from 100, 1000, 6000 and so on. The value 6000 gave good accuracy. They used a Decision tree with depth of 5 for better accuracy. They brief about different types of visualization to understand the data in a much better way. The paper talked about ANN Initially but there is not much importance or usage of ANN. It provides details of accuracy of different models for reduction in classes but no details about any class. Even though the accuracy of naive Bayes and KNN is lower compared to random forest, Adaboost and gradient boosting, they have used those for prediction and are not sure about the reason behind the same. The model and other factors are specific to the San Francisco dataset and looks like data is skewed towards two places in east San Francisco. Analysis on different cities will give more clarity on the performance of the models. Effective visualization can still be done in different ways, but it is not defined, and no analysis done on resolution.
@@ -60,7 +61,7 @@ Even Though many papers explored the usage of Machine learning and Artificial ne
 In this paper, the San Francisco dataset is considered as an important dataset because of geographical location. It is one of the busiest cities in the United States of America and it facilitates air, water and land transportation and also contains people from different diversity at different social standards. It is covered with more bay areas and supports more sea transportation. As it has a thick population, high transportation, diversities and more tourist attractions, it is prone to have more crimes. In order to discover the hidden secret of the crimes in the San Francisco data we apply not only machine learning approaches but also different flavors of Artificial Intelligence such as Artificial neural network, Tabnet which is a customized method and other effective methods for detecting crimes in the San Francisco region. These models and methods not only perform better but also facilitate better hyperparameter tuning techniques.
 
 
-# III. Methodology
+# IV. Methodology
 
 The goal of the project is to analyze and visualize the spatial and temporal relationship of crimes on various attributes and predict the category of crime in a particular location, address the limitation of existing papers and further look towards the enhancement to explore the usage of ANN and different AI methodology. Focus towards the cost of infrastructure to use only python language and its libraries to build all the requirements of the project. The project also covers the interactive dashboard and web application using python libraries such as folium, geopandas and widgets. The flexibility of the project to use the complete approach on different cities' crime dataset like BOSTON to showcase its analysis , performance and effective metrics to provide more meaning to the model and its architecture. Explore the possibility to relate the data skewness to the population or poverty, or others based on the area using census data.
 
@@ -74,60 +75,60 @@ The quality of data helps in providing valuable information and helps in buildin
 
 ## C. Visualization and Presentation
 
-The data obtained was processed to handle missing values, data formatting before performing exploratory data analysis. The attributes time of day, hour, latitude, longitude, and police distinct are highly correlated attributes. The attributes such as day of the week, time of the day and seasons of the year are important factors for the crimes. Figure 1 shows the incident count on different days. It is observed that most of the crimes happen on Friday and most frequently occurring crimes are theft, burglary, robbery, missing person, and drugs. There are quick resolutions for cases like robbery, burglary, and assault. Figure 2 shows the geographical view of the crimes in the San Francisco region. More crimes are committed in the north-east part of San Francisco. Figure 3 and Figure 4 represent the high density of the Top crime categories in the San Francisco region.
+The data obtained was processed to handle missing values, data formatting before performing exploratory data analysis. The attributes time of day, hour, latitude, longitude, and police distinct are highly correlated attributes. The attributes such as day of the week, time of the day and seasons of the year are important factors for the crimes. Fig. 1 shows the incident count on different days. It is observed that most of the crimes happen on Friday and most frequently occurring crimes are theft, burglary, robbery, missing person, and drugs. There are quick resolutions for cases like robbery, burglary, and assault. Fig. 2 shows the geographical view of the crimes in the San Francisco region. More crimes are committed in the north-east part of San Francisco. Fig. 3 and Fig. 4 represent the high density of the Top crime categories in the San Francisco region.
 
-```{r,  out.width="85%", fig.cap="Crime analysis based on Day of week, Police District and its resolution",fig.align = "center", echo= FALSE}
+```{r,  out.width="95%", fig.cap="Crime analysis based on Day of week, Police District and its resolution",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig1.png")
 ```
 
 
-```{r,  out.width="70%", fig.cap="High number of incidents concentrated in the mission district of San Francisco",fig.align = "center", echo= FALSE}
+```{r,  out.width="90%", fig.cap="High number of incidents concentrated in the mission district of San Francisco",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig2.png")
 ```
 
-```{r,  out.width="70%", fig.cap="High density of different incident categories",fig.align = "center", echo= FALSE}
+```{r,  out.width="90%", fig.cap="High density of different incident categories",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig3.png")
 ```
 
-```{r,  out.width="70%", fig.cap="Top incident categories",fig.align = "center", echo= FALSE}
+```{r,  out.width="95%", fig.cap="Top incident categories",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig4.png")
 ```
 
-Figure 5 shows the heat map of incidents based on the weekdays and brighter represents the hotspots of the categories. Figure 6 shows the heatmap of incidents based on the time of the day. Most of the crimes are happening in the afternoon and evening hours. Figure 7 represents the heat map representation based on the season. It shows spring and autumn are favorable for crime cases.
+Fig. 5 shows the heat map of incidents based on the weekdays and brighter represents the hotspots of the categories. Fig 6 shows the heatmap of incidents based on the time of the day. Most of the crimes are happening in the afternoon and evening hours. Fig 7 represents the heat map representation based on the season. It shows spring and autumn are favorable for crime cases.
 
-```{r,  out.width="70%", fig.cap="Incidents heat map based on the day of the week",fig.align = "center", echo= FALSE}
+```{r,  out.width="90%", fig.cap="Incidents heat map based on the day of the week",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig5.png")
 ```
 
-```{r,  out.width="70%", fig.cap="Incidents heat map based on the time of day",fig.align = "center", echo= FALSE}
+```{r,  out.width="90%", fig.cap="Incidents heat map based on the time of day",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig6.png")
 ```
 
 
-```{r,  out.width="70%", fig.cap="Incidents heat map based on the time of day",fig.align = "center", echo= FALSE}
+```{r,  out.width="90%", fig.cap="Incidents heat map based on the time of day",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig7.png")
 ```
 
-Figure 8 shows the attribute analysis based on the correlation between them. The scale from 0 to 1 indicates the correlation and higher the value closer to the relation of the attributes. Figure 9 shows the number of crimes on specific days of the week. It shows crime occurrences every Sunday. The count has reached 300 on specific Sunday in a year and the minimum crime count on Sunday is 200.
+Fig. 8 shows the attribute analysis based on the correlation between them. The scale from 0 to 1 indicates the correlation and higher the value closer to the relation of the attributes. Fig. 9 shows the number of crimes on specific days of the week. It shows crime occurrences every Sunday. The count has reached 300 on specific Sunday in a year and the minimum crime count on Sunday is 200.
 
 ```{r,  out.width="90%", fig.cap="Correlation analysis of different factors",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig8.png")
 ```
 
 
-```{r,  out.width="80%", fig.cap="Number of crimes occurred on Sunday basis",fig.align = "center", echo= FALSE}
+```{r,  out.width="85%", fig.cap="Number of crimes occurred on Sunday basis",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig9.png")
 ```
 
-```{r,  out.width="70%", fig.cap="Top crimes occurred based on the map",fig.align = "center", echo= FALSE}
+```{r,  out.width="80%", fig.cap="Top crimes occurred based on the map",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig10.png")
 ```
 
-```{r,  out.width="50%", fig.cap="Crime count based on the year",fig.align = "center", echo= FALSE}
+```{r,  out.width="80%", fig.cap="Crime count based on the year",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig11.png")
 ```
 
-Figure 10 shows the scatter plot of Top crimes across the San Francisco region. The seasons like summer and fall are attracting more crimes. The analysis clearly shows that the number of crimes had decreased during 2020, it might be because of Pandemic.  The crimes are mostly occurring during afternoon hours, and few are happening during evening hours. If we analyze the yearly trends, the occurrence of the crimes has changed from fall to winter after the pandemic. The attributes timeofday, hour, latitude, longitude, and police distinct are highly correlated attributes. Analysis of historical data from 2003 to 2018 gives more meaningful insights on the data pattern, trend and how to build the model.
+Fig. 10 shows the scatter plot of Top crimes across the San Francisco region. The seasons like summer and fall are attracting more crimes. The analysis clearly shows that the number of crimes had decreased during 2020, it might be because of Pandemic.  The crimes are mostly occurring during afternoon hours, and few are happening during evening hours. If we analyze the yearly trends, the occurrence of the crimes has changed from fall to winter after the pandemic. The attributes timeofday, hour, latitude, longitude, and police distinct are highly correlated attributes. Analysis of historical data from 2003 to 2018 gives more meaningful insights on the data pattern, trend and how to build the model.
 
 The data of San Francisco from the year 2018 onwards shows quite deviation as follows.
 
@@ -142,16 +143,43 @@ The data of San Francisco from the year 2018 onwards shows quite deviation as fo
 
 The analysis drives the use of different models like Random Forest, K-nearest neighbor, ANN, Tablet and time series analysis are created to understand the behavior of the data with the model.
 
-# IV. Methods
+# IV. Experimental Evaluation
 
-This project is intended to be used for crime applications, such as assistance for the crime victims, police department, Victim service division, crime map and public safety awareness, Crime rates and statistics, Attorney, and legal advocacy. It is particularly intended for public safety awareness.
+Evaluation of different models are driven through the confusion metrics that contain the values of True positive, False Positive, True Negative and False Negative that helps in False Positive rate and False Negative rate to measure disproportionate model performance errors. The fraction of negative (not falling to the same category) and positive (same category) predictions that are incorrectly predicted to be positive and negative, respectively, are also reported. These metrics provide values for different errors that can be calculated and provide better understanding of classification. The accuracy of the models is between 83 -- 98 % achieved through different ML and AI approaches. All metrics reported at the .2 decision threshold. 
 
-Random Forest: Random Forest is an ensemble supervised machine learning algorithm for classification and regression problems. It involves building multiple decision trees on different samples and aggregating the predictions using a majority vote for classification.
+## A. Experimental Setup
 
-The k-nearest neighbors (KNN) algorithm is a type of supervised machine learning algorithm used to solve classification. The algorithm estimates the likelihood that a data point will become a member of one group or another based on what group the data points nearest to it belong to. It is a non-parametric algorithm since it is robust to underlying distributions of the data.
+Python libraries such as seaborn, matplotlib and geopandas are used for visualization. The libraries such as pytorch, sklearn and tensorflow are widly used as part of the models. In design of webapps and interactive dashboard folium, ipywidgets and mercury are much useful.
 
-Artificial neural networks are human brain cells inspired systems which are intended to replicate the way that humans learn. Neural networks consist of input and output layers, as well as (in most cases) a hidden layer consisting of units that transform the input into something that the output layer can be  used. ANNs have three layers that are interconnected and consist of neurons. The first layer sends data to the second layer, which in turn sends the next output to the third layer. ANNs are considered non-linear statistical data modeling tools where the complex relationships between inputs and outputs are modeled or patterns are found.
+## B. Experimental Procedure
 
+The experiment is carried out by considering different Artificial Intelligence methods to fulfill the crime categorization techniques. This paper is intended to be used for crime applications such as assistance for the crime prediction, police department, Victim service division, crime map and public safety awareness, Crime rates and statistics, Attorney, and legal advocacy. It is particularly intended for public safety awareness and staff requirements.
+
+### (1). Random Forest
+
+Random Forest is an ensemble supervised machine learning algorithm for classification and regression problems. It involves building multiple decision trees on different samples and aggregating the predictions using a majority vote for classification. Fig. 12 shows the confusion matrix for Random Forest.
+
+```{r,  out.width="90%", fig.cap="Confusion metrics for Random Forest",fig.align = "center", echo= FALSE}
+knitr::include_graphics("img/fig12.png")
+```
+
+### (2). K-nearest neighbors (KNN)
+
+The k-nearest neighbors (KNN) algorithm is a type of supervised machine learning algorithm used to solve classification. The algorithm estimates the likelihood that a data point will become a member of one group or another based on what group the data points nearest to it belong to. It is a non-parametric algorithm since it is robust to underlying distributions of the data. Fig. 13 shows the confusion matrix for k-nearest neighbors.
+
+```{r,  out.width="90%", fig.cap="Confusion metrics for K-Nearest Neighbor",fig.align = "center", echo= FALSE}
+knitr::include_graphics("img/fig13.png")
+```
+
+### (3). Artificial neural networks
+
+Artificial neural networks are human brain cells inspired systems which are intended to replicate the way that humans learn. Neural networks consist of input and output layers, as well as (in most cases) a hidden layer consisting of units that transform the input into something that the output layer can be  used. ANNs have three layers that are interconnected and consist of neurons. The first layer sends data to the second layer, which in turn sends the next output to the third layer. ANNs are considered non-linear statistical data modeling tools where the complex relationships between inputs and outputs are modeled or patterns are found. Fig. 14 shows the confusion matrix for Artificial neural networks.
+
+```{r,  out.width="90%", fig.cap="Confusion metrics for Artificial Neural Network",fig.align = "center", echo= FALSE}
+knitr::include_graphics("img/ANN.png")
+```
+
+### (4). TabNet
 
 TabNet, @arik2021tabnet, is a deep tabular data learning architecture and one of the first transformer based models that uses sequential attention to choose which features to reason from at each decision step. The TabNet encoder is composed of a feature transformer, an attentive transformer and feature masking. A split block divides the processed representation to be used by the attentive transformer of the subsequent step as well as for the overall output. For each step, the feature selection mask provides interpretable information about the model's functionality, and the masks can be aggregated to obtain global feature important attribution. The TabNet decoder is composed of a feature transformer block at each step.
 
@@ -161,48 +189,55 @@ The learning rate is initially set to, lr = 0.020
 
 After 20 epochs, a decay rate of 0.95 will be applied The result is simply the product of our learning rate and decay rate 0.02*0.95 then we fit the model to our data. Basically it says the train and validation sets will be evaluated for a total of 30 iterations (epochs). The patience parameter shows the improvement in metrics is not observed after 30 consecutive epochs help to get the best weights. The batch size of 10000 was selected based on recommendations from TabNet's paper, where they suggest a batch size of up to 10% of the total data.
 
-Since the crime pattern also has a strong time based component we also explored time-series forecasting methods. These methods consider the history along with current data to forecast values through its trends over a period of time or a specific point in the future. Using time series models it is good to forecast the number of crimes that occur in the future. This can be drilled down further up to different category predictions.
+Since the crime pattern also has a strong time based component we also explored time-series forecasting methods. These methods consider the history along with current data to forecast values through its trends over a period of time or a specific point in the future. Using time series models it is good to forecast the number of crimes that occur in the future. This can be drilled down further up to different category predictions. Fig. 15 shows the confusion matrix for Tabnet.
 
-# V. Metrics
-
-Evaluation metrics include confusion metrics that contain the values of True positive, False Positive, True Negative and False Negative that helps in False Positive rate and False Negative rate to measure disproportionate model performance errors. The fraction of negative (not falling to the same category) and positive (same category) predictions that are incorrectly predicted to be positive and negative, respectively, are also reported. These metrics provide values for different errors that can be calculated and provide better understanding of classification. The accuracy of the models is between 83 -- 98 % achieved through different ML and AI approaches. All metrics reported at the .2 decision threshold. 
-
-
-```{r,  out.width="70%", fig.cap="Confusion metrics for Random Forest",fig.align = "center", echo= FALSE}
-knitr::include_graphics("img/fig12.png")
-```
-
-```{r,  out.width="70%", fig.cap="Confusion metrics for K-Nearest Neighbor",fig.align = "center", echo= FALSE}
-knitr::include_graphics("img/fig13.png")
-```
-
-```{r,  out.width="70%", fig.cap="Confusion metrics for Artificial Neural Network",fig.align = "center", echo= FALSE}
-knitr::include_graphics("img/ANN.png")
-```
-
-
-```{r,  out.width="70%", fig.cap="Confusion metrics for TabNet",fig.align = "center", echo= FALSE}
+```{r,  out.width="90%", fig.cap="Confusion metrics for TabNet",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/TabNet.png")
 ```
 
-# VI. Discussion and Impact
+### (5). Time Series Analysis
+
+Time-series forecasting is a method that consider the historical and current data to predict future values over a period of time. The past data is analyzed to make informed decisions this guides our business strategy and help us understand future trends. Table I represents the Root Mean Square Error percentage for the time series model. Lower the error percentage better the performance of the model.
+
+```{r, echo=FALSE}
+library(kableExtra)
+clm1 <- c("37.33 %")
+
+clm2 <- c("42.56 %")
+
+clm3 <- c("26.89 %")
+
+indnm <- c("TimeSeries")
+
+combdf <- cbind(indnm, clm1, clm2, clm3)
+
+colnames(combdf) <- c("Model", "SFO(2003-18)", "SFO(2018-22)", "Boston(2022)")
+
+combdf %>%
+  kbl(caption = "RMSE of the time series model") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+# VI. Results and Discussion
+
+-- Next, the authors should list the results of each experiment in their own section and provide a discussion of those results in that specific section
 
 We always approach ML algorithms for classification problems, but Deep learning models and TabNet are also good for classification problems on tabular data. To build the model's hyperparameter and different features are important factors for the algorithm. In the case of RandomForest using entropy criterion gives better accuracy than Gini Criterion. The number of estimators in K nearest neighbor plays a significant role in the algorithm. In ANN deep neural network architecture, activation, optimizer, and loss should be carefully chosen to get better performance. Learning, decay rate and batch size plays a major role in TabNet. Time series depends on how data is closely related to the previous trends. It is a good practice to keep a smaller number of classes or grouping similar classes as one to get better accuracy. High amount of data helps in fine tuning the model. Uniqueness and data consistency are important factors to build the model. If we build different models it provides more confidence and ideas to weigh to choose the model for prediction.
 
 # VII. Evaluation and Reflection
 
-Metrics like accuracy provides the confidence to identify the better performance of the model. Confusion matrix helps in visual representation of the prediction and its deviation. Classification reports provide the different metrics like precision, recall, f1-score for different classes of the categories. This gives better pictures on how the model is good enough for each classification. MSE and RMSE help in clear view of time series model performance. The loss function greatly influences the performance or accuracy of the model. Table 1 represent the accuracy of each model for different dataset and classes respresent the number of crime categories of the given data.
+Metrics like accuracy provides the confidence to identify the better performance of the model. Confusion matrix helps in visual representation of the prediction and its deviation. Classification reports provide the different metrics like precision, recall, f1-score for different classes of the categories. This gives better pictures on how the model is good enough for each classification. MSE and RMSE help in clear view of time series model performance. The loss function greatly influences the performance or accuracy of the model. Table II represents the accuracy of each model for different dataset and classes respresent the number of crime categories of the given data. Higer the accuracy percentage better the performance of the model.
 
 
 ```{r, echo=FALSE}
 library(kableExtra)
-clm1 <- c("83.70 %", "98.79 %", "86.07 %", "89.25 %", "37.33 %", 37)
+clm1 <- c("83.70 %", "98.79 %", "86.07 %", "89.25 %", 37)
 
-clm2 <- c("89.27 %", "98.59 %", "81.63 %", "86.29 %", "42.56 %", 50)
+clm2 <- c("89.27 %", "98.59 %", "81.63 %", "86.29 %", 50)
 
-clm3 <- c("78.69 %", "72.70 %", "55.58 %", "63.53 %", "26.89 %", 120)
+clm3 <- c("78.69 %", "72.70 %", "55.58 %", "63.53 %", 120)
 
-indnm <- c("RandomForest", "K Neighbor", "ANN", "TabNet", "TimeSeries", "Classes")
+indnm <- c("RandomForest", "K Neighbor", "ANN", "TabNet", "Classes")
 
 combdf <- cbind(indnm, clm1, clm2, clm3)
 
@@ -219,7 +254,7 @@ combdf %>%
 
 To create the web application (henceforth referred as webapp) start with YAML code as the first line of the jupyter notebook by providing the required filters as part of the code. Define the dashboard name as part of the WebAPP page. The webapp needs the mercury libraries hence install the libraries for python and use the command such as jupyter trust, mercury add, and mercury watch on the created file. This will initiate the webapp in the link “http://127.0.0.1:8000” .
 
-```{r,  out.width="65%", fig.cap="Webapp to identify the location and incidents",fig.align = "center", echo= FALSE}
+```{r,  out.width="95%", fig.cap="Webapp to identify the location and incidents",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig14a.png")
 ```
 
@@ -229,7 +264,7 @@ The interactive dashboard needs different python libraries for map and interacti
 followed by initialization of the widgets for the features that are part of filter conditions.
 The description and layout specify the display of the filter in specific format. The function should be defined to get the data and transform the data if necessary to required aggregation. Use folium method to display map and any other graph or chart if necessary. Use widget interactive method to invoke the function and required widget that are part of filters to display the interactive dashboard.
 
-```{r,  out.width="65%", fig.cap="Interactive map to facilitate different requirements",fig.align = "center", echo= FALSE}
+```{r,  out.width="95%", fig.cap="Interactive map to facilitate different requirements",fig.align = "center", echo= FALSE}
 knitr::include_graphics("img/fig14b.png")
 ```
 
