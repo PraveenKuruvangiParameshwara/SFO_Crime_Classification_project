@@ -50,7 +50,8 @@
 % The testflow support page is at:
 % http://www.michaelshell.org/tex/testflow/
 
-\documentclass[10 pt,conference,final,]{IEEEtran}
+\documentclass[conference,final, 10pt]{IEEEtran}
+\IEEEoverridecommandlockouts
 % Some Computer Society conferences also require the compsoc mode option,
 % but others use the standard conference format.
 %
@@ -312,7 +313,15 @@
 %% BEGIN MY ADDITIONS %%
 
 
-\usepackage{nohyperref}
+\usepackage[unicode=true]{hyperref}
+
+\hypersetup{
+            pdftitle={Intelligent Automation of SFO Crime Prediction using Multiple Artificial Intelligence Methods},
+            pdfkeywords={Artificial Intelligence, Machine Learning, Deep
+Learning, TabNet, Crime Pattern Theory},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
 
 % Pandoc toggle for numbering sections (defaults to be off)
 \setcounter{secnumdepth}{0}
@@ -330,6 +339,14 @@
 \NewDocumentCommand\citeproc{mm}{%
   \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
 \makeatletter
+\def\ps@IEEEtitlepagestyle{%
+  \def\@oddfoot{\mycopyrightnotice}%
+  \def\@evenfoot{}%
+}
+\def\mycopyrightnotice{%
+  {\footnotesize\hfill 979-8-3315-4090-6/24/\$31.00~\copyright2024 IEEE \hfill}%
+  \gdef\mycopyrightnotice{}% just in case
+}
  % allow citations to break across lines
  \let\@cite@ofmt\@firstofone
  % avoid brackets around text for \cite:
@@ -388,7 +405,7 @@
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
 \title{Intelligent Automation of SFO Crime Prediction using Multiple
-Artifical Intelligence Methods}
+Artificial Intelligence Methods}
 
 % author names and affiliations
 % use a multiple column layout for up to three different
@@ -397,10 +414,19 @@ Artifical Intelligence Methods}
 \author{
 
 %% ---- classic IEEETrans wide authors' list ----------------
-\IEEEauthorblockN{
-Praveen Kuruvangi Parameshwara\IEEEauthorrefmark{1},Shilpa
-Gupta\IEEEauthorrefmark{2}%%
-}
+\IEEEauthorblockN{Praveen Kuruvangi Parameshwara}
+\IEEEauthorblockA{Applied Data Science\\
+San Jose State University,
+San Jose, California\\ Email: praveen.kp.mce@gmail.com }
+
+\and
+
+\IEEEauthorblockN{Shilpa Gupta, Ph.D.}
+\IEEEauthorblockA{Industrial and Systems Engineering\\
+San Jose State University,
+San Jose, California\\ Email: shilpa.gupta@sjsu.edu }
+
+
 
 
 %% ----------------------------------------------------------
@@ -448,10 +474,13 @@ Gupta\IEEEauthorrefmark{2}%%
 %\IEEEspecialpapernotice{(Invited Paper)}
 
 
-
-
-% make the title area
+% Maketitle generates the title and authors
 \maketitle
+%\IEEEpubid{\makebox[\columnwidth]{979-8-3315-4090-6/24/\$31.00~\copyright2024 IEEE \hfill}
+%\hspace{\columnsep}\makebox[\columnwidth]{ }}
+%\IEEEpubidadjcol
+
+
 
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
@@ -481,9 +510,9 @@ extended to support any type of crime dataset with a minor initial data
 streamline process and complete end to end flow is built using only a
 python program to reduce the infrastructure cost. The benefit from this
 paper is for the police stations to plan for more staffing to avoid the
-occurance of crimes and push towards prevention steps. It helps the
+occurrence of crimes and push towards prevention steps. It helps the
 policy maker to visualize and provide more knowledge on the crime
-occurance and prediction.
+occurrence and prediction.
 \end{abstract}
 
 % keywords
@@ -495,9 +524,6 @@ Pattern Theory
 % use for special paper notices
 
 
-
-% make the title area
-\maketitle
 
 % no keywords
 
@@ -525,40 +551,40 @@ future. {[}4{]} has shown to improve prediction of the time and the day
 of crime. Accurate forecasting of crime hotspots helps in effective
 management of law enforcement, see {[}5{]} and {[}6{]} in mitigating the
 crime, hence improving the safety of the communities. {[}7{]} is an
-excelent introduction to unintended harm that can be introduced in
+excellent introduction to unintended harm that can be introduced in
 machine learning life cycle. We should be more thoughtful about machine
-learning application to apply on social problems because decisions made
+learning applications to apply to social problems because decisions made
 as a result of the Machine learning can impact on people's life. In this
-paper we analyze the crime data with the intention to support police
+paper we analyze the crime data with the intention to support the police
 superintendent or staff in making staffing decisions.
 
 With this objective, in the paper we illustrate the systematic process
 of understanding different factors that are helpful in predicting crimes
 based on historical data. We also explore the background work associated
-with crime analysis and summarise the research done in the field of
+with crime analysis and summarize the research done in the field of
 crime analysis using ML and different approaches.
 
 \section{II. Background}\label{ii.-background}
 
-Crimes happens at certain areas, and it is illegal activities against
+Crimes happen in certain areas, and it is illegal activities against
 society or someone else's property. Crimes are increasing continuously
 due to the awareness in criminals of the technological enhancements,
-modern devices, and even social media. The crime offender rather than
+modern devices, and even social media. The crime offender, rather than
 venturing unknown territories, frequently commit crimes in comfort zones
 or places where they are familiar such as home, work, school, shopping,
 and entertainment areas. Crime analysis deals with crime classification,
 investigating and detecting along with their connections to understand
 its occurrence and patterns. There are quite a few papers that are
 published to analyze crime and have used machine learning approaches to
-predict the crime categories. The analysis were carried out on different
-dataset using different approaches but same method for different
+predict the crime categories. The analyses were carried out on different
+datasets using different approaches but the same method for different
 datasets were not considered. There are different tools and languages
-are used to support, visualize and build different algorithms.
+used to support, visualize and build different algorithms.
 
 \section{III. Related Works}\label{iii.-related-works}
 
-Many of the papers are focusing only on machine learning approach
-because of dataset is falling into categorization methods and explored
+Many of the papers are focusing only on the machine learning approach
+because the dataset is falling into categorization methods and exploring
 the different patterns, attributes and categories of crimes that are
 associated with data. {[}8{]} gives an overview of the machine learning
 classification algorithms for the crime classification, but deals with
@@ -583,7 +609,7 @@ and prevention.
 
 The paper {[}13{]} explored quite a few things towards predicting crimes
 that happen at different places and categories of crime that have
-occurred at a specific place with accuracy depending on number of
+occurred at a specific place with accuracy depending on the number of
 classes. The paper utilized different ML techniques to analyze and
 predict the crimes. It gives us a path on how to deal with huge amounts
 of data for analysis and model creation. Random Forest, Adaboost and
@@ -593,12 +619,12 @@ The paper talked about ANN Initially but there is not much importance or
 usage of ANN. It provides details of accuracy of different models for
 reduction in classes but no details about any class. Even though the
 accuracy of naive Bayes and KNN is lower compared to random forest,
-Adaboost and gradient boosting but they are considered prediction
-without more providing details behind the same. The model and other
-factors are specific to the San Francisco dataset. Analysis on different
-cities will give more clarity on the performance of the models.
-Effective visualization can still be done in different ways, but it is
-not defined, and no analysis done on resolution.
+Adaboost and gradient boosting, they are considered predictions without
+providing details behind the same. The model and other factors are
+specific to the San Francisco dataset. Analysis on different cities will
+give more clarity on the performance of the models. Effective
+visualization can still be done in different ways, but it is not
+defined, and no analysis done on resolution.
 
 Even Though many papers explored the usage of Machine learning and
 Artificial neural network methods, the efficient and robustness of these
@@ -613,14 +639,15 @@ land transportation and also contains people from different diversity at
 different social standards. It is covered with more bay areas and
 supports more sea transportation. As it has a thick population, high
 transportation, diversities and more tourist attractions, it is prone to
-have more crimes. The approach is also extended to Boston crime dataset
-for better usage of defined methods. In order to discover the hidden
-secret of the crimes data we apply not only machine learning approaches
-but also different flavors of Artificial Intelligence such as Artificial
-neural network, Tabnet which is a customized method and other effective
-methods for detecting crimes in the San Francisco and Boston regions.
-These models and methods not only perform better but also facilitate
-better hyperparameter tuning techniques.
+have more crimes. The approach is also extended to the Boston crime
+dataset for better usage of defined methods. In order to discover the
+hidden secret of the crimes data we apply not only machine learning
+approaches but also different flavors of Artificial Intelligence such as
+Artificial neural network, Tabnet which is a customized method and other
+effective methods for detecting crimes in the San Francisco and Boston
+regions. These models and methods not only perform better but also
+facilitate better hyperparameter tuning techniques.
+
 
 \section{IV. Methodology}\label{iv.-methodology}
 
@@ -664,7 +691,7 @@ attributes that are not required or correlated and data conversion
 involves the conversion of character categorical to numeric categorical.
 The streamlining of the data with defined attributes are taken care to
 facilitate the use of most of the crime dataset to use this analysis and
-its different approches.
+its different approaches.
 
 \subsection{C. Visualization and
 Presentation}\label{c.-visualization-and-presentation}
@@ -817,7 +844,7 @@ deviation as follows.
 \item
   Missing people crimes have dominated in recent years.
 \item
-  It looks like the middle of the week which is Wednesday is tagged to
+  It looks like the middle of the week, which is Wednesday, is tagged to
   Drug offense.
 \item
   Crime count has increased in proportion to population growth.
@@ -826,7 +853,7 @@ deviation as follows.
   evening hours.
 \item
   More crimes that were occuring during winter in early 2018 has shifted
-  to other seasons making winter quite non-crime seasons in the recent
+  to other seasons making winter quite non-crime seasons in recent
   years.
 \end{itemize}
 
@@ -839,7 +866,7 @@ time series to understand the behavior and patterns of the data.
 
 Evaluation of different models are driven through the confusion metrics
 that contain the values of True positive, False Positive, True Negative
-and False Negative. These values helps in deriving False Positive rate
+and False Negative. These values help in deriving False Positive rate
 and False Negative rate to measure disproportionate model performance
 errors. The fraction of negative (not falling to the same category) and
 positive (same category) that are incorrectly predicted are also
@@ -850,8 +877,8 @@ better understanding of classification.
 
 Python libraries such as seaborn, matplotlib and geopandas are used for
 visualization. The libraries such as pytorch, sklearn and tensorflow are
-widly used as part of the models. In design of webapps and interactive
-dashboard folium, ipywidgets and mercury are much useful.
+widely used as part of the models. In the design of webapps and
+interactive dashboard folium, ipywidgets and mercury are very useful.
 
 \subsection{B. Models}\label{b.-models}
 
@@ -903,8 +930,8 @@ networks}\label{artificial-neural-networks}
 Artificial neural networks are human brain cells inspired systems which
 are intended to replicate the way that humans learn. Neural networks
 consist of input and output layers, as well as (in most cases) hidden
-layers consisting of units that transform the input into something to
-use by output layer. These layers are interconnected and consist of
+layers consisting of units that transform the input into something to be
+used by the output layer. These layers are interconnected and consist of
 neurons. The first layer sends data to the second layer, which in turn
 sends the next output to the third layer. ANNs are considered in
 non-linear statistical data modeling tools where the complex
@@ -946,11 +973,11 @@ fine tuning the model for better performance. The parameters like
 learning rate, epochs, decay rate, patience and batch size gives better
 control of the models.
 
-Some of the initial methods followed in the paper such as lerning rate
+Some of the initial methods followed in the paper such as learning rate
 to be 0.020, epochs set to 20 and a decay rate of 0.95 is applied then
 fit the model to our data. The train and validation sets are evaluated
 for a total of 30 iterations (epochs). The patience parameter shows the
-improvement in metrics ans help to get the best weights. The batch size
+improvement in metrics and helps to get the best weights. The batch size
 of 10000 was selected based on recommendations from TabNet's paper (
 batch size is up to 10\% of the total data).
 
@@ -958,13 +985,13 @@ batch size is up to 10\% of the total data).
 
 Crime patterns also have a strong time based component and hence it
 falls into time-series forecasting methods. Time-series forecasting is a
-method that consider the historical and current data to predict future
+method that considers the historical and current data to predict future
 values over a period of time. The past data is analyzed to make informed
-decisions this guides our business strategy and help us understand
-future trends. Using time series models it is good to forecast the
-number of crimes that occur in the future. This can be drilled down
-further up to different category predictions. Fig. 15 shows the
-confusion matrix for Tabnet.
+decisions that guide our business strategy and help us understand future
+trends. Using time series models it is good to forecast the number of
+crimes that occur in the future. This can be drilled down further up to
+different category predictions. Fig. 15 shows the confusion matrix for
+Tabnet.
 
 \begin{figure}
 
@@ -996,11 +1023,11 @@ TimeSeries & 37.33 \% & 42.56 \% & 26.89 \%\\
 
 We always approach ML algorithms for classification problems, but Deep
 learning models and TabNet are also good for classification problems on
-tabular data. To build the model, model's hyperparameter and different
-features are important factors. In the case of RandomForest using
-entropy criterion gives better accuracy than Gini Criterion. The number
-of estimators in K-Nearest Neighbor plays a significant role in the
-algorithm. In Artificial Neural Network, deep neural network
+tabular data. To build the model, the model's hyperparameter and
+different features are important factors. In the case of RandomForest
+using entropy criterion gives better accuracy than Gini Criterion. The
+number of estimators in K-Nearest Neighbor plays a significant role in
+the algorithm. In Artificial Neural Network, deep neural network
 architecture, activation, optimizer, and loss should be carefully chosen
 to get better performance. Learning, decay rate and batch size plays a
 major role in TabNet. Time series depends on how data is closely related
@@ -1008,7 +1035,7 @@ to the previous trends. It is a good practice to keep a smaller number
 of classes or group them to similar classes to get better accuracy. High
 amount of quality data enforces the best fine tuning of the model.
 Uniqueness and data consistency are important factors to build the
-model. Building different diversified models provide an opportunity to
+model. Building different diversified models provides an opportunity to
 weigh them to consider the best models for prediction.
 
 \section{VII. Evaluation and
@@ -1018,17 +1045,17 @@ Metrics like accuracy provides the confidence to identify the better
 performance of the model. Confusion matrix helps in visual
 representation of the prediction and its deviation. Classification
 reports provide the different metrics like precision, recall, f1-score
-for different classes of the categories. These gives better pictures on
+for different classes of the categories. These give better pictures on
 how the model is good enough for each classification. MSE and RMSE help
 in clear view of time series model performance. The loss function
 greatly influences the performance or accuracy of the model. Table II
 represents the accuracy of each model for different dataset and classes
-respresent the number of crime categories of the given data. Higer the
+represent the number of crime categories of the given data. Higher the
 accuracy percentage better the performance of the model.
 
 \begin{table}
 \centering
-\caption{\label{tab:unnamed-chunk-17}Comparision of machine and deep learing models}
+\caption{\label{tab:unnamed-chunk-17}Comparison of machine and deep learning models}
 \centering
 \begin{tabular}[t]{l|l|l|l}
 \hline
@@ -1056,9 +1083,9 @@ To create the web application (henceforth referred as webapp) start with
 YAML code as the first line of the jupyter notebook by providing the
 required filters as part of the code. Define the dashboard name as part
 of the WebAPP page. The webapp needs the mercury libraries. Hence,
-install the libraries for python and use the command such as jupyter
-trust, mercury add, and mercury watch on the created file. This will
-initiate the webapp in the link locally ``http://127.0.0.1:8000'' .
+install the libraries for python and use commands such as jupyter trust,
+mercury add, and mercury watch on the created file. This will initiate
+the webapp in the link locally ``http://127.0.0.1:8000'' .
 
 \begin{figure}
 
@@ -1074,7 +1101,7 @@ initiate the webapp in the link locally ``http://127.0.0.1:8000'' .
 The interactive dashboard needs different python libraries for map and
 interactive display. The folium library to display the map and
 ipywidgets library for interactive display are required. The next step
-is to identify the important features for the dashboard and followes the
+is to identify the important features for the dashboard and follows the
 initialization of the widgets for the features that are part of filter
 conditions. The description and layout specify the display of the filter
 in specific format. The function should be defined to get the data and
@@ -1107,7 +1134,7 @@ Work}\label{x.-conclusion-and-future-work}
 
 We always tend to move towards ML algorithms for classification problems
 as it is white box, but there are other models like deep learning, time
-series and TabNet for better accuracy and easy implmentation. Even
+series and TabNet for better accuracy and easy implementation. Even
 Though ML algorithms overcome the Deep learning and TabNet models, more
 data and fine tuning of any models perform better for the given data.
 This paper presents the performance and comparison of Machine learning
@@ -1116,13 +1143,13 @@ Artificial Neural Network, TabNet and includes effective interactive
 dashboard creation and webapp applications. The method is applied to
 different datasets to explain the flexibility of the approach used. The
 random forest comparison was done using both gini and entropy criteria,
-wighted K-nearest neighbor using 100 estimators. A deep tabular data
+weighted K-nearest neighbor using 100 estimators. A deep tabular data
 learning called TabNet that uses sequential attention mechanisms and a
 more effective fine-tuning approach is used. Each model is compared
 across the confusion matrix and classification report. This project
 deals with all the methods using python to make the users more friendly
 and reduce infrastructure cost. It is easy to use the same method to any
-crime dataset with little inital feature modification of the given data
+crime dataset with little initial feature modification of the given data
 to fit to the required format and attributes. Webapp and interactive map
 gives friendly and better visualization of the data. The crimes are
 concentrated towards the particular place, and it might be tagged to
